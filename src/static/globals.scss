@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+  --primary: #111111;
+  --secondary: #efa50e;
+  --teritary: #861533;
+  --border: #6e4c07;
+  --black: rgb(3, 3, 3);
+  --white: rgb(255, 255, 255);
+  --disabled-white: rgba(255, 255, 255, 0.621);
+  --input: #1b1b1b;
+  --curve: 40;
+}
+body {
+  background: var(--black);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+p {
+  font-weight: 300;
+}
+body {
+  background-color: var(--black);
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+h1,
+h2,
+h3 {
+  font-family: "Libre Bodoni", serif;
+}
+.hr-line {
+  background-color: var(--secondary);
+  width: 3rem;
+  height: 0.25rem;
+  transition: 0.3s;
+}
+.span__cover {
+  background-color: var(--secondary);
+  color: var(--black);
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+ul {
+  list-style-type: none;
+}
+h4 {
+  font-size: 21px;
+}
+h2 {
+  font-size: 29px;
+  font-weight: 300;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+p {
+  font-size: 21px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1166px) {
+  h2 {
+    font-size: 19px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
