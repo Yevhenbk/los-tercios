@@ -1,0 +1,110 @@
+.semi {
+    background-color: var(--primary);
+    padding-top: 8rem;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hor__brake-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 65vw;
+    background-color: var(--primary);
+    padding-bottom: 8rem;
+  }
+  .left-al p {
+    color: var(--secondary);
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .left-al h2 {
+    padding-top: 1rem;
+    color: var(--secondary);
+    font-size: 36px;
+  }
+  .card__slider-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding-top: 8rem;
+  }
+  @media screen and (max-width: 1150px) {
+    .card__slider-holder {
+        display: none;
+    }
+    .card__slider-second-holder {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .hor__brake-holder {
+        padding-bottom: 2rem;
+    }
+    .background__text {
+        padding: 2rem 0 4rem !important;
+    }
+  }
+  .background__text {
+    background-color: var(--primary);
+    padding: 2rem 0 16rem;
+    width: 80vw;
+  }
+  .sticky__header {
+    text-align: center;
+    color: var(--secondary);
+    font-size: 76px;
+    font-weight: 400;
+  }
+  .card__slider-second-holder {
+    display: none
+  }
+  @media screen and (max-width: 1150px) {
+    .hor__brake-holder {
+        max-width: 90vw;
+    }
+  }
+  .hr {
+    width: 4rem;
+    height: 0.2rem;
+    background-color: var(--secondary);
+  }
+  .braked-class {
+    width: 25rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+  .gg {
+    display: flex;
+    flex-direction: row;
+    width: 65vw;
+    justify-content: space-between;
+    padding: 4rem 0 12rem;
+  }
+  .circle-br {
+    font-size: 24px;
+    margin: 0;
+    height: 2rem;
+    width: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    font-family: "Libre Bodoni", serif;
+  }
+  .braked-class div h4 {
+    font-size: 21px;
+    font-family: "Libre Bodoni", serif;
+  }
+  .hor__brake-holder p {
+    margin-bottom: 2rem;
+  }

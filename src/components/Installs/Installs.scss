@@ -1,0 +1,61 @@
+.installs {
+    background-color: var(--primary);
+  }
+  .installs p {
+    color: var(--white);
+    text-align: start;
+    font-size: 21px;
+  }
+  .installs-section-one {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60vw;
+    padding: 6rem;
+  }
+  .installs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .installs-title {
+    color: var(--secondary);
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  .installs-text {
+    color: var(--background-body);
+    text-align: center;
+  }
+  Iframe {
+    display: flex;
+    border: none;
+    height: 36rem;
+    width: 50vw;
+    position: relative;
+  }
+  .installs p {
+    margin: 0;
+  }
+  @media screen and (max-width: 1085px) {
+    .installs {
+      display: flex;
+      flex-direction: column;
+    }
+    .installs-section-one {
+      align-items: center;
+      width: 100%;
+      padding: 6rem 1rem;
+    }
+    .installs-text {
+        text-align: center !important;
+    }
+    Iframe {
+      width: 100%;
+      height: 20rem;
+    }
+    .hor__br {
+        display: none;
+    }
+  }

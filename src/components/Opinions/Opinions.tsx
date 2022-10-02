@@ -28,7 +28,9 @@ const Opinions: React.FC = () => {
               rating={5}
               text='El mejor lugar donde aprender halterofilia en Madrid para todas las edades. Además dispone de un club de competidores donde también empezar a entrar en el mundo de la competición. Puedes ir y solicitar tu clase de prueba gratuita!!!'
             />
-            <Scroller
+            <Scroller 
+              isNegative={true}
+              rotate={0}
               className='op__grouped'
               offset={0.14}
             >

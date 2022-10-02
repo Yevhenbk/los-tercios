@@ -1,0 +1,64 @@
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .sup__block {
+    padding: 12rem 0 6rem;
+    color: var(--secondary);
+    max-width: 80vw;
+    position: relative;
+    right: -10vw;
+  }
+  .footer__tag {
+    font-family: "Libre Bodoni", serif;
+    margin-bottom: 0.5rem;
+  }
+  .footer__br {
+    width: 100%;
+    height: 1px;
+    background-color: var(--border);
+    margin-bottom: 4rem;
+  }
+  .footer__block {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__block p {
+    font-size: 14px;
+    margin-bottom: 0.15rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .footer__block span {
+    font-style: italic;
+  }
+  
+  .footer__holder {
+    overflow: hidden;
+    position: relative;
+  }
+  .footer-left {
+    font-family: "Libre Bodoni", serif;
+    color: var(--secondary);
+    white-space: nowrap;
+    word-spacing: 20px;
+    position: absolute;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-size: 18px;
+  }
+  .footer-left span {
+    word-spacing: normal;
+  }
+  .footer-left {
+    -webkit-animation: mymove 8s linear infinite; /* Safari 4.0 - 8.0 */
+    white-space: nowrap;
+    animation: mymove 8s linear infinite alternate;
+  }
+  @media screen and (max-width: 1150) {
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+  }
