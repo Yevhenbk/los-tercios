@@ -1,11 +1,18 @@
 import FetchedCompetitors from '../components/FetchedCompetitors/FetchedCompetitors'
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+import Navbar from '../components/Navbar/Navbar'
+import SmoothScroll from '../components/SmoothScrolling/SmoothScrolling'
 
 const Competitors: React.FC = () => {
   return (
     <div style={{ background: `var(--primary)` }}>
-      <Header header='Equipo de competicion'/>
-      <FetchedCompetitors/>
+      <Navbar/>
+      <SmoothScroll>
+        <Header header='Equipo de competicion'/>
+        <FetchedCompetitors/>
+        <Footer/>
+      </SmoothScroll>
     </div>
   )
 }

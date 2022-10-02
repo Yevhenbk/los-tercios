@@ -3,6 +3,9 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
+  .footer__holder {
+    background-color: var(--black);
+  }
   .sup__block {
     padding: 12rem 0 6rem;
     color: var(--secondary);

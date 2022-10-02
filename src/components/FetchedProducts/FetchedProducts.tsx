@@ -1,13 +1,13 @@
 import * as React from 'react'
-import Competitor from '../Cards/Competitor/Competitor'
-import './FetchedCompetitors.scss'
+import Product from '../Cards/Product/Product'
+import './FetchedProducts.scss'
 
-const FetchedCompetitors: React.FC = () => {
+const FetchedProducts: React.FC = () => {
 
     const [data, setData] = React.useState([])
 
     const getData = () => {
-        fetch('competitors.json',
+        fetch('productos.json',
         {
             headers : { 
             'Content-Type': 'application/json',
@@ -29,12 +29,12 @@ const FetchedCompetitors: React.FC = () => {
     }, [])
 
     return (
-      <div className='fetched__competitors'>
-        {data.map((c: any) => (
-            <Competitor key={c.id} snatch={c.snatch} cj={c.cj} name={c.name} src={c.img} category={c.category} />
+      <div className='fetched__products'>
+        {data.map((p: any) => (
+            <Product key={p.id} img={p.img} product={p.product} price={p.price} />
         ))}
       </div>
     )
 }
 
-export default FetchedCompetitors
+export default FetchedProducts

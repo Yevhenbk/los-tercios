@@ -1,6 +1,7 @@
 import './Competitor.scss'
 
 type Props = {
+    key: number,
     src: string,
     name: string,
     snatch: string,
@@ -15,7 +16,7 @@ const Competitor: React.FC<Props> = (props) => {
     return total
   }  
   return (
-    <div className='competitor__card'>
+    <div className='competitor__card' key={props.key}>
       <img src={props.src} className='competitor__img' alt='competitor__img'/>
       <div>
         <h3 className='competitor__name'>{props.name}</h3>
