@@ -24,7 +24,7 @@ const SemiCards: React.FC = () => {
               }}
               title='clases clases clases clases clases clases clases clases clases
               clases clases clases clases clases clases clases clases clases'
-              src='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
+              imgSrc='https://res.cloudinary.com/yevhenbk/image/upload/v1664721928/photo_5807741867159304757_y_1_k80k1i.jpg'
               text='clases'
             />
             </Scroller>
@@ -37,7 +37,7 @@ const SemiCards: React.FC = () => {
               }}
               title='equipo equipo equipo equipo equipo equipo equipo equipo equipo
               equipo equipo equipo equipo equipo equipo equipo equipo equipo'
-              src='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
+              imgSrc='https://res.cloudinary.com/yevhenbk/image/upload/v1664722004/katti__focused_gd1kcb.jpg'
               text='equipo'
             />
             </Scroller>
@@ -50,14 +50,14 @@ const SemiCards: React.FC = () => {
               }}
               title='productos productos productos productos productos productos productos productos productos
               productos productos productos productos productos productos productos productos productos'
-              src='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
+              imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='productos'
             />
             </Scroller>
             <CardSlider
               title='blog blog blog blog blog blog blog blog blog
             blog blog blog blog blog blog blog blog blog'
-              src='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
+              imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='blog'
             />
           </div>
@@ -65,25 +65,25 @@ const SemiCards: React.FC = () => {
             <CardSlider
               title='clases clases clases clases clases clases clases clases clases
               clases clases clases clases clases clases clases clases clases'
-              src='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
+              imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='clases'
             />
             <CardSlider
               title='equipo equipo equipo equipo equipo equipo equipo equipo equipo
               equipo equipo equipo equipo equipo equipo equipo equipo equipo'
-              src='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
+              imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='equipo'
             />
             <CardSlider
               title='productos productos productos productos productos productos productos productos productos
               productos productos productos productos productos productos productos productos productos'
-              src='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
+              imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='productos'
             />
             <CardSlider
               title='blog blog blog blog blog blog blog blog blog
             blog blog blog blog blog blog blog blog blog'
-              src='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
+              imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='blog'
             />
           </div>

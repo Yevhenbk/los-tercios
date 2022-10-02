@@ -1,8 +1,12 @@
-import React from 'react'
+import FetchedCompetitors from '../components/FetchedCompetitors/FetchedCompetitors'
+import Header from '../components/Header/Header'
 
-const Competitors = () => {
+const Competitors: React.FC = () => {
   return (
-    <div>Competitors</div>
+    <div style={{ background: `var(--primary)` }}>
+      <Header header='Equipo de competicion'/>
+      <FetchedCompetitors/>
+    </div>
   )
 }
 

@@ -1,0 +1,33 @@
+.competitor__card {
+    width: 20rem;
+    overflow: hidden;
+    height: 31.15rem;
+    background: var(--black);
+    box-shadow: rgb(0 0 0 / 30%) 0px 3px 8px;
+}
+.competitor__img {
+    width: 100%;
+    height: 21rem;
+    object-fit: cover;
+}
+.competitor__card div {
+    color: var(--secondary);
+    padding: 1rem;
+}
+.competitor__data {
+    padding-top: .5rem !important;
+    border-top: 1px solid var(--border);
+}
+.competitor__card div h3, p {
+    margin: 0;
+}
+.competitor__card div h3 {
+    font-size: 21px;
+    padding-bottom: .5rem;
+}
+.competitor__card div p {
+    font-size: 14px;
+}
+.competitor__data span {
+    font-style: italic;
+} 

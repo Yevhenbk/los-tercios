@@ -4,7 +4,8 @@ import './CardSlider.scss'
 
 type Props = {
     style?: any,
-    src: string,
+    videoSrc?: string,
+    imgSrc: string,
     title: string,
     text: string
 }
@@ -26,7 +27,7 @@ const CardSlider: React.FC<Props> = (props) => {
         videoSrc='https://res.cloudinary.com/yevhenbk/video/upload/v1662131838/testingmedia_eCSYjCI7_m6lqyj.mp4'
         pausedOverlay={
           <img
-            src='https://regymenfitness.com/wp-content/uploads/2021/12/Sportive-serious-people-liftin-1080x675.jpg'
+            src='https://res.cloudinary.com/yevhenbk/image/upload/v1664722004/katti__focused_gd1kcb.jpg'
             alt=''
             className='slider__image'
           />

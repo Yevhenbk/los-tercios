@@ -56,7 +56,7 @@
     white-space: nowrap;
     animation: mymove 8s linear infinite alternate;
   }
-  @media screen and (max-width: 1150) {
+  @media screen and (max-width: 1150px) {
     .footer {
         flex-direction: column;
         gap: 2rem;
