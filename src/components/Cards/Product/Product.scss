@@ -1,7 +1,7 @@
 .product__card {
     width: 20rem;
     overflow: hidden;
-    height: 27rem;
+    height: 30rem;
     background: var(--black);
     border-bottom: 1px solid var(--border);
 }
@@ -14,21 +14,29 @@
     color: var(--secondary);
     padding: 1rem;
 }
-.product__data {
-    padding-top: .5rem !important;
-    border-top: 1px solid var(--border);
-}
 .product__card div h3, p {
     margin: 0;
 }
 .product__card div h3 {
     font-size: 21px;
-    padding-bottom: .5rem;
+    padding-bottom: .25rem;
 }
 .product__card div p {
-    font-size: 18px;
+    font-size: 16px;
+    font-style: italic;
 }
 .product__data span {
     font-style: italic;
-    font-weight: 600;
 } 
+.product__button {
+    width: 100%;
+    margin: .75rem 0;
+    color: var(--white);
+    background-color: var(--secondary);
+    padding: .5rem 0;
+    font-size: 18px;
+}
+.product__button:hover {
+    background-color: var(--teritary);
+    color: var(--secondary);
+}

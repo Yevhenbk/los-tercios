@@ -4,6 +4,7 @@ import Competitors from './pages/Competitors'
 import Contact from './pages/Contact'
 import Products from './pages/Products'
 import About from './pages/About'
+import injectContext from './lib/appContext'
 
 const Layout = () => {
   return (
@@ -19,4 +20,4 @@ const Layout = () => {
   )
 }
 
-export default Layout;
+export default injectContext(Layout)

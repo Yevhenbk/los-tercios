@@ -5,14 +5,27 @@
     background: var(--black);
     border-bottom: 1px solid var(--border);
 }
+.competitor__card:hover {
+    box-shadow: rgb(0 0 0 / 80%) 0px 3px 8px;
+}
+// .competitor__card:hover > img {
+//     transform: scale(1.1);
+//     z-index: 9;
+//     position: relative;
+//     transition: ease-in-out .15s;
+// }
 .competitor__img {
     width: 100%;
     height: 21rem;
     object-fit: cover;
+    transition: ease-in-out .15s;
 }
 .competitor__card div {
     color: var(--secondary);
     padding: 1rem;
+    z-index: 10;
+    position: relative;
+    background-color: var(--black);
 }
 .competitor__data {
     padding-top: .5rem !important;

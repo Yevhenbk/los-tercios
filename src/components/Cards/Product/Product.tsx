@@ -15,8 +15,9 @@ const Product: React.FC<Props> = (props) => {
       <div>
         <h3 className='product__name'>{props.product}</h3>
         <section className='product__data'>
-          <p>Price: <span>{props.price} €</span></p>  
+          <p>Precio: <span>{props.price} €</span></p>  
         </section>
+        <input type='button' value='Comprar' className='product__button'/>
       </div>  
     </div>
   )
