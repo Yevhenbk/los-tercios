@@ -12,7 +12,6 @@ const getState = (props: GetStateProps) => {
             posts: [],
             products: []
         },
-
         actions: {
             getCompetitors: () => {
                 fetch('competitors.json',

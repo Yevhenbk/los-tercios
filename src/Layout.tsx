@@ -4,7 +4,7 @@ import Competitors from './pages/Competitors'
 import Contact from './pages/Contact'
 import Products from './pages/Products'
 import About from './pages/About'
-import injectContext from './lib/appContext'
+import injectContext from './store/appContext'
 
 const Layout = () => {
   return (

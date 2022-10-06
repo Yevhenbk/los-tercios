@@ -3,10 +3,8 @@
     overflow: hidden;
     height: 31.15rem;
     background: var(--black);
-    border-bottom: 1px solid var(--border);
-}
-.competitor__card:hover {
-    box-shadow: rgb(0 0 0 / 80%) 0px 3px 8px;
+    box-shadow: var(--border) 0px 1px 1px, var(--border) 0px 0px 1px 1px;
+    // border-bottom: 1px solid var(--border);
 }
 // .competitor__card:hover > img {
 //     transform: scale(1.1);

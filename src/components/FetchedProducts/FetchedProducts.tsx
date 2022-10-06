@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Product from '../Cards/Product/Product'
-import { Context } from '../../lib/appContext'
+import { Context } from '../../store/appContext'
 import './FetchedProducts.scss'
 
 const FetchedProducts: React.FC = () => {

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Competitor from '../Cards/Competitor/Competitor'
-import { Context } from '../../lib/appContext'
+import { Context } from '../../store/appContext'
 import './FetchedCompetitors.scss'
 
 const FetchedCompetitors: React.FC = () => {
