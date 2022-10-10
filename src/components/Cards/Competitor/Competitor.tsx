@@ -11,6 +11,8 @@ type Props = {
 
 const Competitor: React.FC<Props> = (props) => {
 
+  var string = props.name
+
   function Total(cj: string, snatch: string) {
     const total = parseInt(cj) + parseInt(snatch)
     return total
@@ -19,12 +21,31 @@ const Competitor: React.FC<Props> = (props) => {
     <div className='competitor__card' key={props.key}>
       <img src={props.src} className='competitor__img' alt='competitor__img'/>
       <div>
-        <h3 className='competitor__name'>{props.name}</h3>
+        <section className='competitor__title'>
+          <span className='c-name__icon'>
+            <p className='ri-share'>{string.charAt(0)}</p>
+          </span>
+          <span className='title-name__wrapper'>
+            <h3 className='competitor__name'>{props.name}</h3>
+          </span>
+        </section>
         <section className='competitor__data'>
-          <p>Category: <span>{props.category} kg</span></p>  
-          <p>Snatch: <span>{props.snatch} kg</span></p>  
-          <p>C&J: <span>{props.cj} kg</span></p>  
-          <p>Total: <span>{Total(props.cj, props.snatch)} kg</span></p>  
+          <span className='c-data__wrapper'>
+            <p>{props.snatch} kg</p>
+            <h4 className='se-title__c'>Arrancada</h4>  
+          </span>
+          <span className='c-data__wrapper'>
+            <p>{props.cj} kg</p>
+            <h4 className='se-title__c'>Dos Tiempos</h4>  
+          </span>
+          <span className='c-data__wrapper'>
+            <p>{props.category} kg</p>
+            <h4 className='se-title__c'>Categoría</h4>
+          </span>
+          <span className='c-data__wrapper'>
+            <p>{Total(props.cj, props.snatch)} kg</p>
+            <h4 className='se-title__c'>Total</h4>  
+          </span>
         </section>
       </div>  
     </div>
