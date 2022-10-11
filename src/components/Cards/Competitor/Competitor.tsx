@@ -1,4 +1,6 @@
 import './Competitor.scss'
+import { IoIosArrowUp } from 'react-icons/io'
+import { HiOutlineMinus } from 'react-icons/hi'
 
 type Props = {
     key: number,
@@ -29,6 +31,7 @@ const Competitor: React.FC<Props> = (props) => {
             <h3 className='competitor__name'>{props.name}</h3>
           </span>
         </section>
+        <span className='icon__up'><IoIosArrowUp className='up'/><HiOutlineMinus className='h__line'/></span>
         <section className='competitor__data'>
           <span className='c-data__wrapper'>
             <p>{props.snatch} kg</p>
