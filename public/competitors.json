@@ -1,33 +1,38 @@
 [
     {
+        "id": 1,
         "name": "Yevhen Balahutrak",
-        "snatch": "110",
-        "cj": "120",
-        "category": "67",
+        "snatch": 110,
+        "cj": 120,
+        "category": 67,
         "img": "https://res.cloudinary.com/yevhenbk/image/upload/v1665347910/katti__recover-min__dbsaer.jpg"
     },{
+        "id": 2,
         "name": "Yevhen Balahutrak",
-        "snatch": "110",
-        "cj": "120",
-        "category": "67",
+        "snatch": 110,
+        "cj": 120,
+        "category": 67,
         "img": "https://res.cloudinary.com/yevhenbk/image/upload/v1665347910/katti__recover-min__dbsaer.jpg"
     },{
+        "id": 3,
         "name": "Yevhen Balahutrak",
-        "snatch": "110",
-        "cj": "120",
-        "category": "67",
+        "snatch": 110,
+        "cj": 120,
+        "category": 67,
         "img": "https://res.cloudinary.com/yevhenbk/image/upload/v1665347910/katti__recover-min__dbsaer.jpg"
     },{
+        "id": 4,
         "name": "Yevhen Balahutrak",
-        "snatch": "110",
-        "cj": "120",
-        "category": "67",
+        "snatch": 110,
+        "cj": 120,
+        "category": 67,
         "img": "https://res.cloudinary.com/yevhenbk/image/upload/v1665347910/katti__recover-min__dbsaer.jpg"
     },{
+        "id": 5,
         "name": "Yevhen Balahutrak",
-        "snatch": "110",
-        "cj": "120",
-        "category": "67",
+        "snatch": 110,
+        "cj": 120,
+        "category": 67,
         "img": "https://res.cloudinary.com/yevhenbk/image/upload/v1665347910/katti__recover-min__dbsaer.jpg"
     }
 ]

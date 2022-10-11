@@ -6,17 +6,17 @@ type Props = {
     key: number,
     src: string,
     name: string,
-    snatch: string,
-    cj: string,
-    category: string
+    snatch: number,
+    cj: number,
+    category: number
 }
 
 const Competitor: React.FC<Props> = (props) => {
 
   var string = props.name
 
-  function Total(cj: string, snatch: string) {
-    const total = parseInt(cj) + parseInt(snatch)
+  function Total(cj: number, snatch: number) {
+    const total = cj + snatch
     return total
   }  
   return (
