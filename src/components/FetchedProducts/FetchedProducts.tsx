@@ -10,7 +10,7 @@ const FetchedProducts: React.FC = () => {
     return (
       <div className='fetched__products'>
         {store.products.map((p: any) => (
-            <Product key={p.id} img={p.img} product={p.product} price={p.price} />
+            <Product key={p.id} img={p.img} product={p.product} size={p.size} price={p.price} />
         ))}
       </div>
     )

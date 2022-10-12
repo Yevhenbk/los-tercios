@@ -4,36 +4,75 @@
     height: 30rem;
     box-shadow: rgba(0, 0, 0, 0.9) 0px 3px 8px;
 }
-.product__title h3 {
+.info__circle {
+    font-size: 4rem;
+}
+.product__data {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product__data p {
+    font-size: 16px;
+    padding-left: 1rem;
+}
+.product__size h4 {
     font-size: 18px;
-    padding: .5rem;
-    background-color: var(--teritary);
-    border: 2px solid var(--secondary);
-    border-radius: 30px;
-    width: 18rem;
+}
+.product__size div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     text-align: center;
-    position: relative;
-    z-index: 8;
+    text-transform: uppercase;
+}
+.product__size div p {
+    font-size: 16px;
+    padding-top: .25rem;
+    font-weight: 500;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    background-color: var(--teritary);
+}
+.product__card:hover {
+    .product__img {
+        transition: .3s all;
+        transform: scale(1.05);
+    }
+    .h__line {
+        position: relative;
+        left: -.2rem;
+        width: 1.75rem;
+        font-size: 1.75rem;
+    }
+    .up {
+        width: 0;
+    }
+    .full__product {
+        top: -20rem;
+    }
+}
+.product__title h3 {
+    font-size: 21px;
+    padding: .5rem;
 }
 .product__title p {
-    display: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    padding: .4rem 1.75rem;
-    background-color: var(--teritary);
-    border: 2px solid var(--secondary);
-    border-radius: 30px;
-    text-align: center;
-    position: relative;
-    left: -2rem;
-    z-index: 9;
+    padding: .5rem;
 }
 .product__title {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+.product__title span {
+    font-family: "Libre Bodoni", serif;
 }
 .product__img {
     width: 100%;
@@ -49,22 +88,22 @@
     top: -5rem;
     z-index: 8;
     padding: 1rem;
+    transition: .3s ease;
 }
 .product__card div h3, p {
     margin: 0;
 }
-.product__data span {
-    font-style: italic;
-} 
 .product__button {
     width: 100%;
-    margin: .75rem 0;
-    color: var(--white);
-    background-color: var(--secondary);
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    background-color: transparent;
+    border: 1px solid var(--secondary);
     padding: .5rem 0;
     font-size: 18px;
+    transition: 0.15s ease;
 }
 .product__button:hover {
-    background-color: var(--teritary);
-    color: var(--secondary);
+    background-color: var(--secondary);
+    color: var(--black);
 }
