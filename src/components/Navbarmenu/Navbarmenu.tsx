@@ -25,7 +25,7 @@ const Navbarmenu: React.FC = () => {
           </li>
           <li>
             <Link to="/classes" className="menu__href">
-              Clases de Halterofilia
+              Clases y Tarifas
             </Link>
           </li>
           <li>

@@ -1,0 +1,38 @@
+[
+    {
+        "start_hour": "11:30",
+        "end_hour": "12:30",
+        "monday": true,
+        "tuesday": false,
+        "wednsday": true,
+        "thursday": false,
+        "friday": true
+    },
+    {
+        "start_hour": "17:30",
+        "end_hour": "18:30",
+        "monday": true,
+        "tuesday": true,
+        "wednsday": true,
+        "thursday": true,
+        "friday": true
+    },
+    {
+        "start_hour": "18:45",
+        "end_hour": "19:45",
+        "monday": true,
+        "tuesday": true,
+        "wednsday": true,
+        "thursday": true,
+        "friday": true
+    },
+    {
+        "start_hour": "20:00",
+        "end_hour": "21:00",
+        "monday": true,
+        "tuesday": true,
+        "wednsday": true,
+        "thursday": true,
+        "friday": true
+    }
+]

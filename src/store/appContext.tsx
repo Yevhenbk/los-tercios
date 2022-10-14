@@ -21,6 +21,7 @@ const injectContext = (PassedComponent: any) => {
 		React.useEffect(() => {
 			state.actions.getCompetitors()
 			state.actions.getProducts()
+			state.actions.getClasses()
 		}, [])
 
 		return (

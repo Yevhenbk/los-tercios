@@ -10,7 +10,8 @@ const getState = (props: GetStateProps) => {
         store: {
             competitors: [],
             posts: [],
-            products: []
+            products: [],
+            classes: []
         },
         actions: {
             getCompetitors: () => {
@@ -31,7 +32,7 @@ const getState = (props: GetStateProps) => {
                 })
             },
             getProducts: () => {
-                fetch('productos.json',
+                fetch('products.json',
                 {
                     method: "GET",
                     headers : { 
@@ -45,6 +46,23 @@ const getState = (props: GetStateProps) => {
                 .then(function(myJson) {
                     console.log(myJson)
                     props.setStore({products: myJson})
+                })
+            },
+            getClasses: () => {
+                fetch('classes.json',
+                {
+                    method: "GET",
+                    headers : { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                    }
+                })
+                .then(function(response){
+                    return response.json()
+                })
+                .then(function(myJson) {
+                    console.log(myJson)
+                    props.setStore({classes: myJson})
                 })
             }
         }
