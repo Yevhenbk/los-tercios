@@ -34,7 +34,7 @@ const Product: React.FC<Props> = (props) => {
           <AiOutlineInfoCircle className='info__circle'/>
           <p>In order to be able to buy this product you have to contact us</p>
         </section>
-        <input type='button' value='Consultar producto' className='product__button'/>
+        <input type='button' value='Consultar disponibilidad' className='product__button'/>
       </div>  
     </div>
   )

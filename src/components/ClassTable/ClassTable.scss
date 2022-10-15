@@ -1,0 +1,88 @@
+.class__table_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--black);
+}
+.class__table_two {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: var(--primary);
+}
+@media screen and (max-width: 1490px) {
+    .class__table_ {
+        flex-direction: column;
+    }
+    .table__sec-one {
+        width: 100vw !important;
+        padding: 4rem 1rem;
+    }
+    .table__img {
+        width: 100vw !important;
+    }
+}
+.table__sec-one {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.class__table-section {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.class__table-section-two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80vw;
+    align-items: flex-start;
+    padding-top: 6rem;
+}
+.class__table-section-two ul li {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+.class__table-section-two ul {
+    margin: 0;
+}
+.class__table-section-two h3 {
+    color: var(--secondary);
+}
+.class__table-p {
+    color: var(--white);
+}
+.class__table-section p {
+    color: var(--secondary);
+}
+.class__table-section h3 {
+    color: var(--secondary);
+}
+.table__img {
+    object-fit: cover;
+}
+.class__table-bold {
+    font-weight: 500;
+}
+.class__button-holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.class__table-button {
+    font-size: 21px;
+    background-color: transparent;
+    color: var(--secondary);
+    border: 1px solid var(--border);
+    padding: .5rem 1rem;
+}
+.class__table-button:hover {
+    background-color: var(--secondary);
+    color: var(--black);
+}

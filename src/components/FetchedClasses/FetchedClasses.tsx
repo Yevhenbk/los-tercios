@@ -8,14 +8,14 @@ const FetchedClasses: React.FC = () => {
 
   return (
     <div className='class__table-holder'>
-      <h4>Horario de clases</h4> 
+      <h4>Horarios</h4> 
       <section className='class__table'>
         <div className='class__day'>
-          <p>Lunes</p>
+          <h5>Lunes</h5>
             {store.classes
               .filter((c: any) => c.monday === true)
               .map((c: any) => (
-                <div className="get-class">
+                <div className="class__holder">
                   <p>{c.start_hour}</p>
                   <span>-</span>
                   <p>{c.end_hour}</p>
@@ -23,11 +23,11 @@ const FetchedClasses: React.FC = () => {
               ))}  
         </div>
         <div className='class__day'>
-          <p>Martes</p>
+          <h5>Martes</h5>
             {store.classes
               .filter((c: any) => c.tuesday === true)
               .map((c: any) => (
-                <div className="get-class">
+                <div className="class__holder">
                   <p>{c.start_hour}</p>
                   <span>-</span>
                   <p>{c.end_hour}</p>
@@ -35,11 +35,11 @@ const FetchedClasses: React.FC = () => {
               ))}  
         </div>
         <div className='class__day'>
-          <p>Miercoles</p>
+          <h5>Miercoles</h5>
             {store.classes
               .filter((c: any) => c.wednesday === true)
               .map((c: any) => (
-                <div className="get-class">
+                <div className="class__holder">
                   <p>{c.start_hour}</p>
                   <span>-</span>
                   <p>{c.end_hour}</p>
@@ -47,11 +47,11 @@ const FetchedClasses: React.FC = () => {
               ))}  
         </div>
         <div className='class__day'>
-          <p>Jueves</p>
+          <h5>Jueves</h5>
             {store.classes
               .filter((c: any) => c.thursday === true)
               .map((c: any) => (
-                <div className="get-class">
+                <div className="class__holder">
                   <p>{c.start_hour}</p>
                   <span>-</span>
                   <p>{c.end_hour}</p>
@@ -59,11 +59,11 @@ const FetchedClasses: React.FC = () => {
               ))}  
         </div>
         <div className='class__day'>
-          <p>Viernes</p>
+          <h5>Viernes</h5>
             {store.classes
               .filter((c: any) => c.friday === true)
               .map((c: any) => (
-                <div className="get-class">
+                <div className="class__holder">
                   <p>{c.start_hour}</p>
                   <span>-</span>
                   <p>{c.end_hour}</p>

@@ -4,7 +4,7 @@
         "end_hour": "12:30",
         "monday": true,
         "tuesday": false,
-        "wednsday": true,
+        "wednesday": true,
         "thursday": false,
         "friday": true
     },
@@ -13,7 +13,7 @@
         "end_hour": "18:30",
         "monday": true,
         "tuesday": true,
-        "wednsday": true,
+        "wednesday": true,
         "thursday": true,
         "friday": true
     },
@@ -22,7 +22,7 @@
         "end_hour": "19:45",
         "monday": true,
         "tuesday": true,
-        "wednsday": true,
+        "wednesday": true,
         "thursday": true,
         "friday": true
     },
@@ -31,7 +31,7 @@
         "end_hour": "21:00",
         "monday": true,
         "tuesday": true,
-        "wednsday": true,
+        "wednesday": true,
         "thursday": true,
         "friday": true
     }
