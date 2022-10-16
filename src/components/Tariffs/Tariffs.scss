@@ -1,0 +1,118 @@
+.tariffs__section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.tarrifs__holder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; 
+    gap: 3rem;
+    padding: 4rem 0 6rem;
+}
+.tariffs__card {
+    padding: .5rem .75rem;
+    width: 20rem;
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.tariffs__card h5 {
+    margin: 0;
+    font-size: 24px;
+}
+.tariffs__card h5 {
+    color: var(--secondary);
+}
+.tariffs__card p {
+    font-weight: 500;
+    color: var(--secondary);
+}
+.tariffs__card:hover {
+    cursor: pointer;
+}
+.tariffs__section-two ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.tariffs__section-two ul li {
+    font-size: 21px;
+    padding-bottom: 1rem;
+}
+.tariffs__section-two ul li span {
+    padding-left: .5rem;
+    font-style: italic;
+    color: var(--white);
+}
+.done__icon {
+    color: green;
+    margin-right: .5rem;
+    padding: .25rem;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: rgb(114, 189, 114);
+}
+.close__icon {
+    color: red;
+    margin-right: .5rem;
+    padding: .25rem;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: rgb(189, 114, 114);
+}
+.tariffs__section-two {
+    width: 20rem;
+}
+.vertical__br {
+    background-color: var(--border);
+    height: 20rem;
+    width: 2px;
+}
+.tariffs {
+    background-color: var(--primary);
+    padding-top: 4rem;
+}
+.tariffs h2, .tariffs__par {
+    text-align: center;
+}
+.tariffs h2 {
+    color: var(--secondary);
+}
+.tariffs__par {
+    color: var(--white);
+}
+.tariff__active {
+    padding: .5rem .75rem;
+    width: 20rem;
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: var(--secondary);
+}
+.tariff__active h5 {
+    color: var(--black);
+    margin: 0;
+}
+.tariff__active p {
+    font-weight: 500;
+}
+.tariff__active h5 {
+    margin: 0;
+    font-size: 24px;
+}
+.tariff__active:hover {
+    cursor: default;
+}
+.line__through {
+    text-decoration: line-through;
+    color: var(--disabled-white) !important;
+}

@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar'
 import ClassTable from '../components/ClassTable/ClassTable'
 import SmoothScroll from '../components/SmoothScrolling/SmoothScrolling'
 import FetchedClasses from '../components/FetchedClasses/FetchedClasses'
+import Tariffs from '../components/Tariffs/Tariffs'
 
 const Classes: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Classes: React.FC = () => {
         <Header header='Clases de Halterofilia'/>
         <ClassTable/>
         <FetchedClasses/>
+        <Tariffs/>
         <Footer/>
       </SmoothScroll>
     </div>

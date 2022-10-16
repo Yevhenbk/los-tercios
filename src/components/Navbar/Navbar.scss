@@ -37,7 +37,6 @@
     padding: 0.5rem;
     color: var(--teritary);
     margin: 0 0.5rem;
-    transition: 0.15s ease;
   }
   .icon__small:hover {
     cursor: pointer;
@@ -53,7 +52,6 @@
     padding: 0.5rem;
     color: var(--teritary);
     margin: 0 0.5rem;
-    transition: 0.15s ease;
   }
   .icon__name {
     align-self: center;
@@ -67,7 +65,6 @@
     opacity: 1;
     color: var(--secondary);
     margin: 0 0.5rem;
-    transition: 0.15s ease;
   }
   .exit__icon {
     font-size: 1.25rem;
@@ -109,7 +106,6 @@
   .granditem {
     position: relative;
     top: -3rem;
-    transition: 0.15s ease;
     align-items: center;
     text-align: center;
     background-color: var(--secondary);
@@ -126,7 +122,6 @@
   .hidden__item {
     position: relative;
     top: 3.4rem;
-    transition: 0.15s ease;
     align-items: center;
     text-align: center;
     background-color: var(--secondary);
@@ -139,7 +134,6 @@
   .hidden__granditem {
     position: relative;
     top: 2.95rem;
-    transition: 0.15s ease;
     align-items: center;
     text-align: center;
     background-color: var(--secondary);
@@ -174,7 +168,6 @@
     padding: 0.5rem;
     color: black;
     margin: 0 0.5rem;
-    transition: 0.15s ease;
   }
   .menu__grand:hover {
     background-color: var(--teritary);
@@ -204,7 +197,6 @@
     z-index: -1;
     position: relative;
     overflow: hidden;
-    transition: 0.15s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +212,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.15s ease;
     box-shadow: rgba(211, 211, 211, 0.122) 0px 1px 3px 0px,
       rgba(203, 203, 203, 0.2) 0px 0px 0px 1px;
   }
@@ -228,7 +219,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.15s ease;
     top: -11.65rem;
     position: relative;
   }
