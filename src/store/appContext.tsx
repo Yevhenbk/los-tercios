@@ -6,7 +6,7 @@ export const Context = React.createContext<any>(null)
 const injectContext = (PassedComponent: any) => {
 	const StoreWrapper = (props: any) => {
 
-		const [state, setState] = React.useState(
+		const [state, setState] = React.useState<any>(
 			getState({
 				getStore: () => state.store,
 				getActions: () => state.actions,
@@ -19,9 +19,17 @@ const injectContext = (PassedComponent: any) => {
 		)
 
 		React.useEffect(() => {
+			const controller = new AbortController()
+			// const signal = controller.signal
+
 			state.actions.getCompetitors()
 			state.actions.getProducts()
 			state.actions.getClasses()
+
+			return () => {
+				console.log('cancelled')
+				controller.abort()
+			}
 		}, [])
 
 		return (

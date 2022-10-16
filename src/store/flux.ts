@@ -1,7 +1,7 @@
 type GetStateProps = {
 	getStore?: any,
 	getActions?: any,
-	setStore?: any
+	setStore?: any,
 }
 
 const getState = (props: GetStateProps) => {
@@ -22,13 +22,16 @@ const getState = (props: GetStateProps) => {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                     }
-                })
+                },)
                 .then(function(response){
                     return response.json()
                 })
                 .then(function(myJson) {
                     console.log(myJson)
                     props.setStore({competitors: myJson})
+                })
+                .catch(err => {
+                    console.log(err)
                 })
             },
             getProducts: () => {
@@ -47,6 +50,9 @@ const getState = (props: GetStateProps) => {
                     console.log(myJson)
                     props.setStore({products: myJson})
                 })
+                .catch(err => {
+                    console.log(err)
+                })
             },
             getClasses: () => {
                 fetch('classes.json',
@@ -63,6 +69,9 @@ const getState = (props: GetStateProps) => {
                 .then(function(myJson) {
                     console.log(myJson)
                     props.setStore({classes: myJson})
+                })
+                .catch(err => {
+                    console.log(err)
                 })
             }
         }
