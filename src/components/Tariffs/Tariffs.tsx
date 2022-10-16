@@ -27,7 +27,7 @@ const Tariffs: React.FC = () => {
         <ul className='tariffs__list'>
           <li><MdDone className='done__icon'/>{tariff ? <span>7 days per week</span> : <span>2 days per week</span>}</li>
           <li><MdDone className='done__icon'/><span>Unlimited machine usage</span></li>
-          <li>{tariff ? <><MdDone className='done__icon'/> <span>DOpen box</span></> : <><GrClose className='close__icon'/><span className='line__through'>Open box</span></>}</li>
+          <li>{tariff ? <><MdDone className='done__icon'/> <span>Open box</span></> : <><GrClose className='close__icon'/><span className='line__through'>Open box</span></>}</li>
           <li>{tariff ? <><MdDone className='done__icon'/> <span>Whatever</span></> : <><GrClose className='close__icon'/><span className='line__through'>Whatever</span></>}</li>
           <li>{tariff ? <><MdDone className='done__icon'/> <span>Whatever</span></> : <><GrClose className='close__icon'/><span className='line__through'>Whatever</span></>}</li>
           <li><MdDone className='done__icon'/><span>Whatever</span></li>
