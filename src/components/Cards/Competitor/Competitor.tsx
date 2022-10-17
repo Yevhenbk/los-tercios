@@ -21,7 +21,7 @@ const Competitor: React.FC<Props> = (props) => {
   }  
   return (
     <div className='competitor__card' key={props.key}>
-      <img src={props.src} className='competitor__img' alt='competitor__img'/>
+      <img src={props.src} style={{width: '20rem', height: '33rem'}} className='competitor__img' alt='competitor__img'/>
       <div>
         <section className='competitor__title'>
           <span className='c-name__icon'>

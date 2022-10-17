@@ -2,13 +2,14 @@
     color: var(--secondary);
     cursor: pointer;
     display: block;
-    max-width: 214.66px;
+    max-width: max-content;
     font-size: 21px;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
     position: relative;
     border: 1px solid var(--secondary);
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 9;
   }
   a.thar-three:hover {
     color: var(--black);

@@ -19,7 +19,7 @@ const Slider: React.FC = () => {
             de origen. El pesista es un atleta fuerte, rápido, con una condición
             física suprema y una gran capacidad de concentración.
           </p>
-          <SliderButton />
+          <SliderButton value='Solicitar clase gratuita' link='/contact' />
         </div>
       </div>
       <div className='slider__section_two'>

@@ -8,13 +8,13 @@ const Tcarousel = () => {
   return (
     <Carousel fade>
       <Carousel.Item interval={5000}>
-        <img className="carouselImage" src={slide1} alt="First slide" />
+        <img className="carouselImage" style={{height: '100vh', width: 'auto'}} src={slide1} alt="First slide" />
       </Carousel.Item>
       <Carousel.Item interval={5000}>
-        <img className="carouselImage" src={slide2} alt="Second slide" />
+        <img className="carouselImage" style={{height: '100vh', width: 'auto'}} src={slide2} alt="Second slide" />
       </Carousel.Item>
       <Carousel.Item interval={5000}>
-        <img className="carouselImage" src={slide3} alt="Third slide" />
+        <img className="carouselImage" style={{height: '100vh', width: 'auto'}} src={slide3} alt="Third slide" />
       </Carousel.Item>
     </Carousel>
   );

@@ -7,7 +7,7 @@ const FetchedClasses: React.FC = () => {
   const { store } = React.useContext(Context)    
 
   return (
-    <div className='class__table-holder'>
+    <div className='class__table-holder' id='tariffs'>
       <h4>Horarios & Tarifas</h4> 
       <section className='class__table'>
         <div className='class__day'>

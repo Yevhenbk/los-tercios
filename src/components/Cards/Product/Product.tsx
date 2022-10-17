@@ -15,7 +15,7 @@ const Product: React.FC<Props> = (props) => {
 
   return (
     <div className='product__card' key={props.key}>
-      <img src={props.img} className='product__img' alt='product__img'/>
+      <img src={props.img} style={{height: '30rem', width: '100%'}} className='product__img' alt='product__img'/>
       <div className='full__product'>
         <section className='product__title'>
           <h3 className='product__name'>{props.product}</h3>

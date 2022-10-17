@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
-import "./SliderButton.scss";
+import { Link } from 'react-router-dom';
+import './SliderButton.scss';
 
-const SliderButton: React.FC = () => {
+type Props = {
+  value: string,
+  children?: React.ReactNode
+  link?: any,
+  onClick?: any 
+}
+
+const SliderButton: React.FC<Props> = (props) => {
   return (
     <div>
-      <Link to="/contact" className="thar-three">
-          Solicitar clase gratis
+      <Link to={props.link} className='thar-three' onClick={props.onClick}>
+          {props.value} {props.children}
       </Link>
     </div>
   )

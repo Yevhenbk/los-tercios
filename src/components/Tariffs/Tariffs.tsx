@@ -2,6 +2,8 @@ import * as React from 'react'
 import './Tariffs.scss'
 import { MdDone } from 'react-icons/md'
 import { GrClose } from 'react-icons/gr'
+import { GiArrowhead } from 'react-icons/gi'
+import SliderButton from '../SliderButton/SliderButton'
 
 const Tariffs: React.FC = () => {
 
@@ -13,14 +15,17 @@ const Tariffs: React.FC = () => {
     <p className='tariffs__par'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis iure veritatis ver.</p>
     <div className='tarrifs__holder'>
       <section className='tariffs__section-one'>
-        <div className={tariff ? 'tariff__active' : 'tariffs__card'} onClick={() => setTariff(true)}>
-          <p>Beyound the limits</p>  
-          <h5>€59.99</h5>  
+        <div className="tariffs__wrapper">
+          <div className={tariff ? 'tariff__active' : 'tariffs__card'} onClick={() => setTariff(true)}>
+            <p>Beyound the limits</p>  
+            <h5>€59.99</h5>  
+          </div>
+          <div className={!tariff ? 'tariff__active' : 'tariffs__card'} onClick={() => setTariff(false)}>
+            <p>Unnecessary waste</p>  
+            <h5>€39.99</h5>  
+          </div>
         </div>
-        <div className={!tariff ? 'tariff__active' : 'tariffs__card'} onClick={() => setTariff(false)}>
-          <p>Unnecessary waste</p>  
-          <h5>€39.99</h5>  
-        </div>
+        <SliderButton value='Solicitar clase gratuita' link='/contact'><GiArrowhead className='arrow__icon'/></SliderButton>
       </section>
       <div className='vertical__br'/>
       <section className="tariffs__section-two">
