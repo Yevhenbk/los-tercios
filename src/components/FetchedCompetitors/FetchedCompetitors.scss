@@ -13,3 +13,20 @@
     padding: 0 1.5rem 6rem;
     background: var(--primary);
 }
+.search__icon {
+    color: var(--secondary);
+    font-size: 28px;
+    margin: .5rem .75rem;
+    position: relative;
+    top: -.15rem;
+}
+.close__search {
+    color: var(--secondary);
+    font-size: 28px;
+    margin: .5rem .75rem;
+    position: relative;
+    top: -.15rem;
+}
+.close__search:hover {
+    cursor: pointer;
+}

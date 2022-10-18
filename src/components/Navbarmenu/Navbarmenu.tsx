@@ -14,32 +14,37 @@ const Navbarmenu: React.FC = () => {
       <div className="wrapper">
         <ul>
           <li>
-            <Link to="/" className="menu__href">
+            <Link to="/" className="menu__href" target='_top'>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="menu__href">
+            <Link to="/contact" className="menu__href" target='_top'>
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/classes" className="menu__href">
+            <Link to="/classes" className="menu__href" target='_top'>
               Clases y Tarifas
             </Link>
           </li>
           <li>
-            <Link to="/competitors" className="menu__href">
+            <Link to="/competitors" className="menu__href" target='_top'>
               Equipo de competicion
             </Link>
           </li>
           <li>
-            <Link to="/products" className="menu__href">
+            <Link to="/contact" className="menu__href" target='_top'>
+              Calculadora
+            </Link>
+          </li>
+          <li>
+            <Link to="/products" className="menu__href" target='_top'>
               Productos
             </Link>
           </li>
           <li>
-            <Link to="/blog" className="menu__href">
+            <Link to="/contact" className="menu__href" target='_top'>
               Blog
             </Link>
           </li>

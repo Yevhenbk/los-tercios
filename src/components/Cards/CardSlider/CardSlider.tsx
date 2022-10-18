@@ -17,7 +17,7 @@ const CardSlider: React.FC<Props> = (props) => {
   const [shown, setShown] = React.useState<boolean>(false)
 
   return (
-    <Link to={props.link}>
+    <Link to={props.link} target='_top'>
     <div
       className='card__slider'
       style={props.style}

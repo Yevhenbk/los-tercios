@@ -58,7 +58,7 @@ const SemiCards: React.FC = () => {
             />
             </Scroller>
             <CardSlider
-              link='/blog'
+              link='/contact'
               title='blog blog blog blog blog blog blog blog blog
             blog blog blog blog blog blog blog blog blog'
               imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
@@ -88,7 +88,7 @@ const SemiCards: React.FC = () => {
               text='productos'
             />
             <CardSlider
-              link='/blog'
+              link='/contact'
               title='blog blog blog blog blog blog blog blog blog
             blog blog blog blog blog blog blog blog blog'
               imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'

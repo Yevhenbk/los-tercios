@@ -1,8 +1,10 @@
-import React from 'react'
+import Header from '../components/Header/Header'
 
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Header header='Work in progress 🙃'/>
+    </div>
   )
 }
 
