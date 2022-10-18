@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Competitors from './pages/Competitors'
 import Contact from './pages/Contact'
@@ -9,7 +9,7 @@ import injectContext from './store/appContext'
 
 const Layout = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/competitors' element={<Competitors/>} />
@@ -18,7 +18,7 @@ const Layout = () => {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/classes' element={<Classes/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
