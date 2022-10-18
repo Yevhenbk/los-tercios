@@ -25,7 +25,7 @@ const Tariffs: React.FC = () => {
             <h5>€39.99</h5>  
           </div>
         </div>
-        <SliderButton value='Solicitar clase gratuita' link='/contact'><GiArrowhead className='arrow__icon'/></SliderButton>
+        <SliderButton value='Solicitar clase gratuita' link='/contact'/>
       </section>
       <div className='vertical__br'/>
       <section className="tariffs__section-two">

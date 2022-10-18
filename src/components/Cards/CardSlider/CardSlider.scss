@@ -1,4 +1,6 @@
 .card__slider {
+  color: var(--secondary);
+  text-decoration: none;
     max-width: 25rem;
     overflow: hidden;
     transition: 0.5s all;
@@ -35,7 +37,6 @@
   
   .marqueeStyle {
     display: inline-block;
-    /* Apply animation to this element */
     animation: scrolling-left1 10s linear infinite;
   }
   
@@ -57,7 +58,7 @@
     font-weight: 300;
   }
   .example-left {
-    -webkit-animation: mymove 8s linear infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation: mymove 8s linear infinite;
     white-space: nowrap;
     animation: mymove 8s linear infinite alternate;
   }
@@ -79,7 +80,8 @@
       left: -140px;
     }
   }
-  div.card__slider:hover {
+  a.card__slider:hover {
     cursor: pointer;
+    color: var(--secondary);
     box-shadow: rgb(0 0 0 / 70%) 0px 3px 8px;
   }

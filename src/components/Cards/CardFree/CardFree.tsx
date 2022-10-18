@@ -15,7 +15,7 @@ const CardFree: React.FC<Props> = (props) => {
       </div>
       <div className='free__cards__first'>
         <div className='in__between'>
-          <img src={props.img} className='free__card__img' />
+          <img src={props.img} style={{height: '5rem', width: '5rem'}} className='free__card__img' />
           <div className='free__card__first__holder'>
             <p className='free__card__name'>{props.name}</p>
             <div className='op__rating'>

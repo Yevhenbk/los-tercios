@@ -1,7 +1,7 @@
 import { Carousel } from 'react-bootstrap'
-import slide1 from '../../static/img/slider__alex_.jpg'
-import slide2 from '../../static/img/katti__split-min_.jpg'
-import slide3 from '../../static/img/toni__setup_.jpg'
+import slide1 from '../../static/img/slider_1.jpg'
+import slide2 from '../../static/img/slider_3.jpg'
+import slide3 from '../../static/img/slider_2.jpg'
 import './Carousel.scss';
 
 const Tcarousel = () => {

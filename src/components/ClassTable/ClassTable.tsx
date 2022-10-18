@@ -1,6 +1,5 @@
 import * as React from 'react'
 import classimg from '../../static/img/sara__img.jpg'
-// import SliderButton from '../SliderButton/SliderButton'
 import './ClassTable.scss'
 
 const ClassTable: React.FC = () => {
@@ -14,7 +13,6 @@ const ClassTable: React.FC = () => {
           <p className='class__table-par'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate fugit obcaecati maxime magnam iusto commodi, voluptate eveniet harum totam at exercitationem! Dolore odit nesciunt autem officiis totam nemo ullam porro.</p>
           <p className='class__table-bold'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptate dolore! A ex deserunt ullam voluptas! Itaque numquam facere cupiditate quas velit expedita id deleniti ad iste repellendus! Magni, earum?</p>
           <div className='class__button-holder'>
-            {/* <SliderButton value='Horarios & Tarifas'onClick={() => scroll()}/> */}
           </div>
         </div> 
       </div>

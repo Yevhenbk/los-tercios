@@ -18,6 +18,7 @@ const SemiCards: React.FC = () => {
           <div className='card__slider-holder'>
             <Scroller isNegative={true} offset={0.14} rotate={0}>
             <CardSlider
+              link='/classes'
               style={{
                 position: `relative`,
                 top: `200px`,
@@ -30,6 +31,7 @@ const SemiCards: React.FC = () => {
             </Scroller>
             <Scroller isNegative={true} offset={0.24} rotate={0}>
             <CardSlider
+              link='/competitors'
               style={{
                 position: `relative`,
                 top: `200px`,
@@ -43,6 +45,7 @@ const SemiCards: React.FC = () => {
             </Scroller>
             <Scroller isNegative={true} offset={0.44} rotate={0}>
             <CardSlider
+              link='/products'
               style={{
                 position: `relative`,
                 top: `1000px`,
@@ -55,6 +58,7 @@ const SemiCards: React.FC = () => {
             />
             </Scroller>
             <CardSlider
+              link='/blog'
               title='blog blog blog blog blog blog blog blog blog
             blog blog blog blog blog blog blog blog blog'
               imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
@@ -63,24 +67,28 @@ const SemiCards: React.FC = () => {
           </div>
           <div className='card__slider-second-holder'>
             <CardSlider
+              link='/classes'
               title='clases clases clases clases clases clases clases clases clases
               clases clases clases clases clases clases clases clases clases'
               imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='clases'
             />
             <CardSlider
+              link='/competitors'
               title='equipo equipo equipo equipo equipo equipo equipo equipo equipo
               equipo equipo equipo equipo equipo equipo equipo equipo equipo'
               imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='equipo'
             />
             <CardSlider
+              link='/products'
               title='productos productos productos productos productos productos productos productos productos
               productos productos productos productos productos productos productos productos productos'
               imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'
               text='productos'
             />
             <CardSlider
+              link='/blog'
               title='blog blog blog blog blog blog blog blog blog
             blog blog blog blog blog blog blog blog blog'
               imgSrc='https://5scontent.com/app/uploads/2020/02/5S-COUNTDOWN_02.mp4'

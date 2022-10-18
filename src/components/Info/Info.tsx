@@ -3,8 +3,8 @@ import { GiStrongMan } from 'react-icons/gi'
 import Scroller from '../Scroller/Scroller'
 import { IoMdMan } from 'react-icons/io'
 import { GiWeightLiftingUp } from 'react-icons/gi'
-import cardFirst from '../../static/img/katti__recover-min_.jpg'
-import cardSecond from '../../static/img/im2.jpeg'
+import cardFirst from '../../static/img/rsz_1katti__recover-min_.jpg'
+import cardSecond from '../../static/img/info_2.jpg'
 import './Info.scss'
 
 const Info: React.FC = () => {

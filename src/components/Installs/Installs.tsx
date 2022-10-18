@@ -23,7 +23,6 @@ const Installs: React.FC = () => {
             frameBorder={0}
             allowFullScreen={undefined}
             aria-hidden='false'
-            // tabIndex={0}
             className='frame '
           />
         </div>

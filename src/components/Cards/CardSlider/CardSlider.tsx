@@ -1,5 +1,7 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 import HoverVideoPlayer from 'react-hover-video-player'
+import katti from '../../../static/img/rsz_12katti__focused.jpg'
 import './CardSlider.scss'
 
 type Props = {
@@ -7,13 +9,15 @@ type Props = {
     videoSrc?: string,
     imgSrc: string,
     title: string,
-    text: string
+    text: string,
+    link: string
 }
 
 const CardSlider: React.FC<Props> = (props) => {
   const [shown, setShown] = React.useState<boolean>(false)
 
   return (
+    <Link to={props.link}>
     <div
       className='card__slider'
       style={props.style}
@@ -27,7 +31,7 @@ const CardSlider: React.FC<Props> = (props) => {
         videoSrc='https://res.cloudinary.com/yevhenbk/video/upload/v1662131838/testingmedia_eCSYjCI7_m6lqyj.mp4'
         pausedOverlay={
           <img
-            src='https://res.cloudinary.com/yevhenbk/image/upload/v1664722004/katti__focused_gd1kcb.jpg'
+            src={katti}
             alt=''
             className='slider__image'
           />
@@ -42,6 +46,7 @@ const CardSlider: React.FC<Props> = (props) => {
         )}
       </div>
     </div>
+    </Link>
   )
 }
 

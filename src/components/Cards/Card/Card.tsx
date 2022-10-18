@@ -12,7 +12,7 @@ const Card: React.FC<Props> = (props) => {
     <div className='op__card'>
       <div className='op__cards__first'>
         <div className='in__between'>
-          <img src={props.img} className='op__card__img' />
+          <img src={props.img} style={{width: '3rem', height: '3rem'}} className='op__card__img' />
           <div className='op__card__first__holder'>
             <p className='op__card__name'>{props.name}</p>
             <div className='op__rating'>

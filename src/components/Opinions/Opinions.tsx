@@ -2,9 +2,6 @@ import * as React from 'react'
 import Scroller from '../Scroller/Scroller'
 import Card from '../Cards/Card/Card'
 import CardFree from '../Cards/CardFree/CardFree'
-// import Card from '../../component/Cards/Opinions/Card.jsx';
-// import CardFree from '../../component/Cards/Opinions/CardFree.jsx';
-
 import './Opinions.scss';
 
 const Opinions: React.FC = () => {

@@ -7,13 +7,9 @@ type Props = {
 }
 
 const SmoothScroll: React.FC<Props> = (props) => {
-    // 1.
+  
     const windowSize = UseWindowSize();
-
-    //2.
     const scrollingContainerRef = React.useRef<any>();
-
-    // 3.
     const data = {
         ease: 0.03,
         current: 0,
@@ -21,7 +17,6 @@ const SmoothScroll: React.FC<Props> = (props) => {
         rounded: 0,
     };
 
-    // 4.
     React.useEffect(() => {
         requestAnimationFrame(() => smoothScrollingHandler());
     }, []);
@@ -33,7 +28,6 @@ const SmoothScroll: React.FC<Props> = (props) => {
 
         scrollingContainerRef.current.style.transform = `translateY(-${data.previous}px)`;
 
-        // Recursive call
         requestAnimationFrame(() => smoothScrollingHandler());
     };
 
