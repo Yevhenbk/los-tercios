@@ -9,12 +9,22 @@
     flex-direction: column;
     gap: 1rem;
 }
+.tariffs__wrapper div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
 .tariffs__button {
     font-size: 21px;
     color: var(--secondary);
     padding: .5rem .75rem;
     border: 1px solid var(--secondary);
     background-color: transparent;
+}
+.tariffs__button:hover {
+    background-color: var(--secondary);
+    color: var(--black);
 }
 .tarrifs__holder {
     display: flex;
@@ -26,13 +36,15 @@
 }
 .tariffs__card {
     padding: .5rem .75rem;
-    width: 20rem;
+    width: 22rem;
     display: flex;
     border: 1px solid var(--secondary);
-    // border-radius: 5px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+}
+.tariffs__card .dot_tar {
+    color: var(--border);
 }
 .tariffs__card h5 {
     margin: 0;
@@ -79,7 +91,7 @@
     background-color: rgb(189, 114, 114);
 }
 .tariffs__section-two {
-    width: 20rem;
+    width: 22rem;
 }
 .vertical__br {
     background-color: var(--border);
@@ -101,14 +113,16 @@
 }
 .tariff__active {
     padding: .5rem .75rem;
-    width: 20rem;
+    width: 22rem;
     display: flex;
     border: 1px solid var(--border);
-    // border-radius: 5px;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     background-color: var(--secondary);
+}
+.tariff__active .dot_tar {
+    color: var(--white);
 }
 .tariff__active h5 {
     color: var(--black);

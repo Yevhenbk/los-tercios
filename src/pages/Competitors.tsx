@@ -9,7 +9,7 @@ const Competitors: React.FC = () => {
     <div style={{ background: `var(--primary)` }}>
       <Navbar/>
       <SmoothScroll>
-        <Header header='Equipo de competicion'/>
+        <Header header='Equípo de competición'/>
         <FetchedCompetitors/>
         <Footer/>
       </SmoothScroll>

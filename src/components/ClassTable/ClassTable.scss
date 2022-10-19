@@ -18,10 +18,6 @@
         width: 100vw !important;
         padding: 4rem 1rem;
     }
-    .table__img {
-        width: 100vw !important;
-        height: auto !important;
-    }
 }
 .table__sec-one {
     width: 50vw;
@@ -64,9 +60,6 @@
 }
 .class__table-section h1 {
     color: var(--secondary);
-}
-.table__img {
-    object-fit: cover;
 }
 .class__table-bold {
     font-weight: 500;

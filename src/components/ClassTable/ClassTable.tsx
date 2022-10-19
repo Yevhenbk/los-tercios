@@ -1,5 +1,9 @@
 import * as React from 'react'
 import classimg from '../../static/img/sara__img.jpg'
+import Tcarousel from '../Carousel/Carousel'
+import slide1 from '../../static/img/slider_1.jpg'
+import slide2 from '../../static/img/slider_3.jpg'
+import slide3 from '../../static/img/slider_2.jpg'
 import './ClassTable.scss'
 const Slide: any = require("react-reveal/Slide")
 const Fade: any = require("react-reveal/Fade")
@@ -20,10 +24,8 @@ const ClassTable: React.FC = () => {
         </div> 
         </Slide>
       </div>
-      <div className="table__sec-two">
-        <Fade big cascade>
-        <img style={{width: '50vw', height: '100vh'}} src={classimg} alt="lifting Sara" className="table__img" />
-        </Fade>
+      <div className="slider__section_two">
+         <Tcarousel slider_1={slide1} slider_2={slide2} slider_3={slide3}/>
       </div>
     </div>
     <div className='class__table_two'>

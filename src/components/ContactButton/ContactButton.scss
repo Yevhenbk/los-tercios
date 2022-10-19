@@ -1,0 +1,23 @@
+.contact__icon-holder {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--secondary);
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__icon {
+    font-size: 32px;
+    color: var(--teritary);
+}
+.contact__icon-holder:hover {
+    cursor: pointer;
+    background-color: var(--teritary);
+    .contact__icon {
+        color: var(--secondary);
+    }
+}

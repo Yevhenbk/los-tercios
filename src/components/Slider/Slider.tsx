@@ -1,5 +1,8 @@
 import Tcarousel from '../Carousel/Carousel'
 import SliderButton from '../SliderButton/SliderButton'
+import slide1 from '../../static/img/slider_1.jpg'
+import slide2 from '../../static/img/slider_3.jpg'
+import slide3 from '../../static/img/slider_2.jpg'
 import './Slider.scss'
 const Slide: any = require("react-reveal/Slide")
 
@@ -26,7 +29,7 @@ const Slider: React.FC = () => {
         </Slide>
       </div>
       <div className='slider__section_two'>
-        <Tcarousel />
+        <Tcarousel slider_1={slide1} slider_2={slide2} slider_3={slide3}/>
       </div>
     </div>
   )

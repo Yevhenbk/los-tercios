@@ -7,6 +7,7 @@ import Products from './pages/Products'
 import Classes from './pages/Classes'
 import About from './pages/About'
 import injectContext from './store/appContext'
+import ContactButton from './components/ContactButton/ContactButton'
 import './static/globals.scss'
 
 const App: React.FC = () => {
@@ -33,6 +34,7 @@ const App: React.FC = () => {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/classes' element={<Classes/>} />
         </Routes>
+        <ContactButton/>
       </BrowserRouter>}
     </div>
   )
