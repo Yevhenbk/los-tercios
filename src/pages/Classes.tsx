@@ -1,4 +1,3 @@
-import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import ClassTable from '../components/ClassTable/ClassTable'
@@ -11,7 +10,6 @@ const Classes: React.FC = () => {
     <div style={{ background: `var(--primary)` }}>
       <Navbar/>
       <SmoothScroll>
-        <Header header='Clases de Halterofilia'/>
         <ClassTable/>
         <FetchedClasses/>
         <Tariffs/>

@@ -1,6 +1,7 @@
 import './Competitor.scss'
 import { IoIosArrowUp } from 'react-icons/io'
 import { HiOutlineMinus } from 'react-icons/hi'
+const Slide: any = require("react-reveal/Slide")
 
 type Props = {
     key: number,
@@ -20,6 +21,7 @@ const Competitor: React.FC<Props> = (props) => {
     return total
   }  
   return (
+    <Slide bottom duration={500}>
     <div className='competitor__card' key={props.key}>
       <img src={props.src} style={{width: '20rem', height: '33rem'}} className='competitor__img' alt='competitor__img'/>
       <div>
@@ -52,6 +54,7 @@ const Competitor: React.FC<Props> = (props) => {
         </section>
       </div>  
     </div>
+    </Slide>
   )
 }
 

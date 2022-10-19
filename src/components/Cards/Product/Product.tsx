@@ -2,6 +2,7 @@ import './Product.scss'
 import { IoIosArrowUp } from 'react-icons/io'
 import { HiOutlineMinus } from 'react-icons/hi'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
+const Slide: any = require("react-reveal/Slide")
 
 type Props = {
     key: number,
@@ -14,6 +15,7 @@ type Props = {
 const Product: React.FC<Props> = (props) => {
 
   return (
+    <Slide bottom duration={500}>
     <div className='product__card' key={props.key}>
       <img src={props.img} style={{height: '30rem', width: '100%'}} className='product__img' alt='product__img'/>
       <div className='full__product'>
@@ -37,6 +39,7 @@ const Product: React.FC<Props> = (props) => {
         <input type='button' value='Consultar disponibilidad' className='product__button'/>
       </div>  
     </div>
+    </Slide>
   )
 }
 

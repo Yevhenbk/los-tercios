@@ -100,6 +100,9 @@
     .coach__info {
       padding: 6rem 0 0;
     }
+    .coach-side {
+      padding: 0;
+    }
   }
   @media screen and (max-width: 415px) {
     .coach__info {
@@ -152,7 +155,7 @@
       object-fit: cover;
       margin: 0;
     }
-    .coach__info {
-      padding: 6rem 0;
-    }
+  }
+  .coach__info span {
+    color: var(--white);
   }

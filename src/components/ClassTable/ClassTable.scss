@@ -20,13 +20,15 @@
     }
     .table__img {
         width: 100vw !important;
+        height: auto !important;
     }
 }
 .table__sec-one {
-    width: 40vw;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8rem 1rem 4rem;
 }
 .class__table-section {
     width: 25rem;
@@ -51,7 +53,7 @@
 .class__table-section-two ul {
     margin: 0;
 }
-.class__table-section-two h3 {
+.class__table-section-two h1 {
     color: var(--secondary);
 }
 .class__table-p {
@@ -60,7 +62,7 @@
 .class__table-section p {
     color: var(--secondary);
 }
-.class__table-section h3 {
+.class__table-section h1 {
     color: var(--secondary);
 }
 .table__img {

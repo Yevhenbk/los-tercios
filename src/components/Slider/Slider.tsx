@@ -1,6 +1,7 @@
 import Tcarousel from '../Carousel/Carousel'
 import SliderButton from '../SliderButton/SliderButton'
 import './Slider.scss'
+const Slide: any = require("react-reveal/Slide")
 
 const Slider: React.FC = () => {
 
@@ -9,6 +10,7 @@ const Slider: React.FC = () => {
       <div
         className='slider__section_one'
       >
+        <Slide left cascade duration={400}>
         <div className='inner__holder'>
           <h1 className='header__one'>
             Lorem ipsum dolor sit amet consectetur adip.
@@ -21,6 +23,7 @@ const Slider: React.FC = () => {
           </p>
           <SliderButton value='Solicitar clase gratuita' link='/contact' />
         </div>
+        </Slide>
       </div>
       <div className='slider__section_two'>
         <Tcarousel />

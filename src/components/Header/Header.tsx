@@ -1,4 +1,5 @@
 import './Header.scss'
+const Fade: any = require("react-reveal/Fade")
 
 type Props = {
     header: string
@@ -7,7 +8,9 @@ type Props = {
 const Header: React.FC<Props> = (props) => {
   return (
     <div className='header__title'>
-      <h1>{props.header}</h1>
+      <Fade big>
+        <h1>{props.header}</h1>
+      </Fade>
     </div>
   )
 }

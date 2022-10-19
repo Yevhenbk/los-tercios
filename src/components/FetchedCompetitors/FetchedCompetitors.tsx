@@ -17,7 +17,7 @@ const FetchedCompetitors: React.FC = () => {
         {query.length === 0 ? <AiOutlineSearch className='search__icon'/> : <MdClose className='close__search' onClick={() => setQuery('')} />}
       </Search>
       <div className='fetched__competitors'>
-        {store.competitors.filter((competitors: any) => competitors.name.toLowerCase().includes(query)).map((c: any) => (
+        {store.competitors.filter((c: any) => c.name.toLowerCase().includes(query)).map((c: any) => (
             <Competitor key={c.id} snatch={c.snatch} cj={c.cj} name={c.name} src={c.img} category={c.category} />
         ))}
       </div>
