@@ -22,11 +22,11 @@ const Navbar: React.FC = () => {
 
   return (
     <Fade top >
-    <div
-    className={
-        navbar ? 'luc__nav active__nav fixed-top' : 'luc__nav fixed-top'
-    }
-    >
+      <div
+        className={
+            navbar && window.location.pathname=="/" ? 'luc__nav active__nav fixed-top' :  window.location.pathname!=="/" ? 'luc__nav sup_active__nav fixed-top' : 'luc__nav fixed-top'
+        }
+        >
         <Link to='/'>
           <img src={logo} className='logo__navbar' />
         </Link>

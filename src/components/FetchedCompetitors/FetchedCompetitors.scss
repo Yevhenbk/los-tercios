@@ -30,3 +30,17 @@
 .close__search:hover {
     cursor: pointer;
 }
+.display__header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10rem 4vw 3rem;
+}
+@media screen and (max-width: 735px) {
+    .display__header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+}

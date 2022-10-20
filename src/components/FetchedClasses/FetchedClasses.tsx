@@ -8,7 +8,8 @@ const FetchedClasses: React.FC = () => {
 
   return (
     <div className='class__table-holder' id='tariffs'>
-      <h4>Horarios & Tarifas</h4> 
+        <h4>Horarios & Tarifas</h4>
+        <p className='headers__par'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum rem aliquid. Accusamus eius nam nihil cumque.</p>
       <section className='class__table'>
         <div className='class__day'>
           <h5>Lunes</h5>

@@ -8,13 +8,13 @@
     gap: .5rem;
     padding: .5rem .75rem;
     border: 1px solid var(--border);
-    border-radius: 5px;
+    // border-radius: 5px;
     margin-bottom: .75rem;
 }
 .class__table {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2rem;
 }
 @media screen and (max-width: 975px) {
     .class__table {
@@ -39,9 +39,16 @@
     font-size: 32px;
     color: var(--secondary);
     padding: 1rem 0;
-    margin: 4rem 0 6rem;
-    border-top: 2px solid var(--border);
-    border-bottom: 2px solid var(--border);  
+    margin: 4rem 0 0;
+    // border-top: 2px solid var(--border);
+    // border-bottom: 2px solid var(--border);  
     width: 95vw;
-    text-align: center;
+    text-align: right;
+    max-width: 50rem;
+}
+.headers__par {
+    color: var(--white);
+    padding-bottom: 4rem;
+    max-width: 50rem;
+    text-align: right;
 }

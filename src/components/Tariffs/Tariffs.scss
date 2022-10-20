@@ -32,7 +32,7 @@
     align-items: flex-start;
     justify-content: center; 
     gap: 3rem;
-    padding: 4rem 0 6rem;
+    padding: 4rem 0;
 }
 .tariffs__card {
     padding: .5rem .75rem;
@@ -101,15 +101,19 @@
 .tariffs {
     background-color: var(--primary);
     padding-top: 2rem;
-}
-.tariffs h2, .tariffs__par {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .tariffs h2 {
     color: var(--secondary);
+    text-align: left;
+    width: 50rem;
 }
 .tariffs__par {
     color: var(--white);
+    width: 50rem;
+    text-align: left
 }
 .tariff__active {
     padding: .5rem .75rem;
@@ -170,5 +174,64 @@
     .tariffs__section-one {
         height: auto;
         gap: 1rem;
+    }
+}
+.contact__tariffs {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.tariffs__button-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--teritary);
+    background-color: var(--secondary);
+    padding: 0 0 2rem;
+}
+.outline__form {
+    font-size: 32px;
+}
+.button-tar__holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-tar__holder p {
+    font-weight: 500;
+}
+.tariffs__button-contact:hover {
+    background-color: var(--teritary);
+    color: var(--secondary);
+    cursor: pointer;
+}
+.button-tar__holder::before {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--secondary);
+    position: relative;
+    top: -1rem;
+    transform: rotate(45deg);
+}
+.tariffs__button-contact:hover > .button-tar__holder::before {
+    background-color: var(--teritary) !important;
+}
+.data__tariffs-holder {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    gap: .5rem;
+    align-items: flex-start;
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+.data__tariffs-holder p {
+    font-size: 16px;
+}
+@media screen and (max-width: 1000px) {
+    .data__tariffs-holder {
+        padding: 4rem 2rem;
     }
 }

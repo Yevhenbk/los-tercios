@@ -1,4 +1,3 @@
-import Header from '../components/Header/Header'
 import FetchedProducts from '../components/FetchedProducts/FetchedProducts'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
@@ -9,7 +8,6 @@ const Products: React.FC = () => {
     <div style={{ background: `var(--primary)` }}>
       <Navbar/>
       <SmoothScroll>
-      <Header header='Productos'/>
       <FetchedProducts/>
       <Footer/>
       </SmoothScroll>
