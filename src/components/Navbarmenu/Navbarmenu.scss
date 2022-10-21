@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.411) 0px 3px 8px;
+    text-transform: uppercase;
   }
   @media screen and (max-width: 740px) {
     .wrapper {
@@ -115,7 +116,7 @@
     font-family: "Libre Bodoni", serif;
     text-decoration: none;
     height: 2.5rem;
-    width: 17rem;
+    width: 19rem;
     padding: 0.45rem 0.75rem;
   }
   .menu__href:hover {

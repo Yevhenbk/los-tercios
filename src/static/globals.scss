@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import "~bootstrap/scss/bootstrap";
 
 :root {
@@ -20,12 +21,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-p {
-  font-weight: 300;
-}
 body {
   background-color: var(--black);
-  font-family: "Roboto", sans-serif;
+  font-family: "Karla", sans-serif;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   width: 100vw;
@@ -39,6 +37,7 @@ h3,
 h4,
 h5 {
   font-family: "Libre Bodoni", serif;
+  text-transform: uppercase;
 }
 a {
   text-decoration: none;
@@ -73,10 +72,11 @@ h2 {
 h1 {
   font-size: 36px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 p {
-  font-size: 21px;
-  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
 }
 @media screen and (max-width: 1166px) {
   h2 {
@@ -96,39 +96,15 @@ p {
   top: 0;
   left: 0;
   background-color: #111111;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: 1s ease;
 }
-.loader {
-  width: 48px;
-  height: 48px;
-  border: 3px solid #861533;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-} 
-.loader::after {
-  content: '';  
-  box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-bottom-color: #efa50e;
+.logo__loader {
+  width: 3rem;
+  height: auto;
+  margin-bottom: 1.5rem;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} 

@@ -7,9 +7,11 @@
     padding: 0.5rem 0.75rem;
     text-decoration: none;
     position: relative;
-    border: 1px solid var(--secondary);
+    border: 2px solid var(--secondary);
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
     z-index: 9;
+    text-transform: uppercase;
+    font-weight: 500;
   }
   a.thar-three:hover {
     color: var(--black);

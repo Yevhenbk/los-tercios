@@ -2,11 +2,13 @@ import * as React from 'react'
 import Scroller from '../Scroller/Scroller'
 import CardSlider from '../Cards/CardSlider/CardSlider'
 import './SemiCards.scss'
+const Fade: any = require("react-reveal/Fade")
 
 const SemiCards: React.FC = () => {
 
   return (
       <div className='semi'>
+        <Fade bottom cascade>
         <div className='hor__brake-holder'>
           <h1>Lorem ipsum dolor sit amet consectetur.</h1>
           <p>
@@ -14,6 +16,7 @@ const SemiCards: React.FC = () => {
             libero, possimus obcaecati.
           </p>
         </div>
+        </Fade>
         <div className='background__text'>
           <div className='card__slider-holder'>
             <Scroller isNegative={true} offset={0.14} rotate={0}>

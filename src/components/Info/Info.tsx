@@ -6,6 +6,7 @@ import { GiWeightLiftingUp } from 'react-icons/gi'
 import cardFirst from '../../static/img/rsz_1katti__recover-min_.jpg'
 import cardSecond from '../../static/img/info_2.jpg'
 import './Info.scss'
+const Fade: any = require("react-reveal/Fade")
 
 const Info: React.FC = () => {
 
@@ -13,6 +14,7 @@ const Info: React.FC = () => {
     <div className='info__holder'>
       <div className='info'>
         <div className='info__states'>
+          <Fade cascade>
           <div className='info__state'>
             <IoMdMan className='state__icon' />
             <h3>Mejora de la capacidad de concentración</h3>
@@ -37,6 +39,7 @@ const Info: React.FC = () => {
               repellendus aliquam.
             </p>
           </div>
+          </Fade>
         </div>
         <div className='block__wrapper'>
         <div className='info__block'>
@@ -55,10 +58,11 @@ const Info: React.FC = () => {
             ></img>
             </Scroller>
         </div>
+          <Fade>
           <div className='info__par'>
             <h2>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              molestiae placeat, cumque eaque necessitatibus dolorum?
+              molestiae, necessitatibus dolorum?
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
@@ -71,6 +75,7 @@ const Info: React.FC = () => {
               exercitationem laboriosam.
             </p>
           </div>
+          </Fade>
         </div>
       </div>
     </div>

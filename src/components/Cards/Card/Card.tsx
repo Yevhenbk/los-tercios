@@ -1,4 +1,5 @@
 import { AiFillStar } from 'react-icons/ai';
+const Fade: any = require("react-reveal/Fade")
 
 type Props = {
     img: string,
@@ -9,6 +10,7 @@ type Props = {
 
 const Card: React.FC<Props> = (props) => {
   return (
+    <Fade right duration={1500}>
     <div className='op__card'>
       <div className='op__cards__first'>
         <div className='in__between'>
@@ -30,6 +32,7 @@ const Card: React.FC<Props> = (props) => {
         <p className='op__text'>{props.text}</p>
       </div>
     </div>
+    </Fade>
   )
 }
 

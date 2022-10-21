@@ -1,5 +1,5 @@
 .coach-img__background {
-    height: 30rem;
+    height: 35rem;
     background-color: var(--primary);
     background-size: cover;
     justify-content: space-between;
@@ -40,15 +40,19 @@
   .coach-img {
     position: relative;
     top: 0;
-    width: 30rem;
+    object-fit: cover;
+    width: 30vw;
     border-radius: none;
     z-index: 10;
   }
   .coach__info {
+    position: relative;
+    left: -5vw;
     max-width: 30rem;
     height: max-content;
     text-align: end;
     padding-right: 5rem;
+    text-transform: uppercase;
   }
   .coach__info h1 {
     color: var(--secondary);
@@ -99,6 +103,7 @@
     }
     .coach__info {
       padding: 6rem 0 0;
+      left: 0;
     }
     .coach-side {
       padding: 0;

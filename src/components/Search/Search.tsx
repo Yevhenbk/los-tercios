@@ -12,7 +12,7 @@ type Props = {
 const Search: React.FC<Props> = (props) => {
   return (
     <form className='search__bar-holder'>
-      <Fade big>
+      <Fade right duration={500}>
       <div className='search__wrapper'>
         <input type='text' className='search__bar' onChange={props.onChange} placeholder={props.placeholder} value={props.value}/>
         {props.children}  

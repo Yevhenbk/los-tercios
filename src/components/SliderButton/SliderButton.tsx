@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './SliderButton.scss';
-const Slide: any = require("react-reveal/Slide")
+const Fade: any = require("react-reveal/Fade")
 
 type Props = {
   value: string,
@@ -11,13 +11,13 @@ type Props = {
 
 const SliderButton: React.FC<Props> = (props) => {
   return (
-    <Slide left duration={400}>
+    <Fade left duration={500}>
     <div>
       <Link to={props.link} className='thar-three' onClick={props.onClick}>
           {props.value} {props.children}
       </Link>
     </div>
-    </Slide>
+    </Fade>
   )
 }
 

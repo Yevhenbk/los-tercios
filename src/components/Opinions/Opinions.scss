@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 8rem 0 4rem;
+    padding: 8rem 0 6rem;
     overflow: hidden;
     text-align: end;
     background-attachment: fixed;
@@ -30,8 +30,9 @@
     text-align: center;
   }
   .op__header__p {
-    font-size: 21px;
+    font-size: 24px;
     text-align: center;
+    text-transform: uppercase;
     color: var(--secondary);
     margin-bottom: 2rem;
   }
@@ -39,6 +40,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 90vw;
     justify-content: space-evenly;
   }
   .op__card {
@@ -47,7 +49,7 @@
     width: 25rem;
     background-color: transparent;
     margin: 1.5rem 1rem;
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     transition: all ease 0.3s;
   }
   .free__card {
@@ -103,7 +105,7 @@
     margin: 0;
     color: var(--secondary);
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
   }
   .op__card__date {
@@ -122,8 +124,9 @@
     height: 1.5rem;
   }
   .op__text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
+    line-height: 24px;
     color: var(--white);
     margin: 0;
     text-align: start;
@@ -131,6 +134,7 @@
   .free__text {
     font-size: 21px;
     font-weight: 300;
+    line-height: 32px;
     color: var(--white);
     padding-top: 2rem;
     text-align: start;
@@ -168,6 +172,9 @@
     }
     .hidden__card .op__card {
       display: block;
+    }
+    .op__cards {
+      width: auto !important;
     }
   }
   @media screen and (max-width: 860px) {

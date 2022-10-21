@@ -4,7 +4,7 @@ import slide1 from '../../static/img/slider_1.jpg'
 import slide2 from '../../static/img/slider_3.jpg'
 import slide3 from '../../static/img/slider_2.jpg'
 import './Slider.scss'
-const Slide: any = require("react-reveal/Slide")
+const Fade: any = require("react-reveal/Fade")
 
 const Slider: React.FC = () => {
 
@@ -13,7 +13,7 @@ const Slider: React.FC = () => {
       <div
         className='slider__section_one'
       >
-        <Slide left cascade duration={400}>
+        <Fade left cascade duration={500}>
         <div className='inner__holder'>
           <h1 className='header__one'>
             Lorem ipsum dolor sit amet consectetur adip.
@@ -26,7 +26,7 @@ const Slider: React.FC = () => {
           </p>
           <SliderButton value='Solicitar clase gratuita' link='/contact' />
         </div>
-        </Slide>
+        </Fade>
       </div>
       <div className='slider__section_two'>
         <Tcarousel slider_1={slide1} slider_2={slide2} slider_3={slide3}/>

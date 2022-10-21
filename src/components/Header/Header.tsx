@@ -8,12 +8,12 @@ type Props = {
 
 const Header: React.FC<Props> = (props) => {
   return (
+    <Fade left duration={500} cascade>
     <div className='header__title'>
-      <Fade big>
         <h1>{props.header}</h1>
         <p>{props.description}</p>
-      </Fade>
     </div>
+    </Fade>
   )
 }
 

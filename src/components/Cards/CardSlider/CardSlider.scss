@@ -7,8 +7,8 @@
     border-bottom: 1px solid var(--border);
   }
   .slider__video {
-    width: 25rem;
-    height: 25rem;
+    width: 25vw;
+    height: 30rem;
     object-fit: cover;
   }
   
@@ -20,8 +20,8 @@
     letter-spacing: 0.12rem;
   }
   .slider__image {
-    width: 25rem;
-    height: 25rem;
+    width: 25vw;
+    height: 30rem;
     object-fit: cover !important;
   }
   @media screen and (max-width: 1395px) {
@@ -41,8 +41,8 @@
   }
   
   .example-left {
-    padding-top: 20px;
-    font-size: 16px;
+    padding-top: 15px;
+    font-size: 21px;
     text-transform: uppercase;
     font-family: "Libre Bodoni", serif;
     font-weight: 300;
@@ -51,11 +51,10 @@
     word-spacing: 20px;
   }
   .example-right {
-    padding-top: 20px;
-    font-size: 16px;
+    padding-top: 15px;
+    font-size: 21px;
     text-transform: uppercase;
     font-family: "Libre Bodoni", serif;
-    font-weight: 300;
   }
   .example-left {
     -webkit-animation: mymove 8s linear infinite;

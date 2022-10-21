@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: rgb(228, 228, 228);
 }
 .product__data p {
     font-size: 16px;
@@ -29,50 +30,36 @@
 }
 .product__size div p {
     font-size: 16px;
-    padding-top: .25rem;
+    padding-top: .4rem;
     font-weight: 500;
     width: 2.25rem;
     height: 2.25rem;
-    border: 2px solid var(--secondary);
+    border: 2px solid rgb(228, 228, 228);
     border-radius: 50%;
-    background-color: var(--teritary);
-}
-.product__card:hover {
-    .product__img {
-        transition: .3s all;
-        transform: scale(1.05);
-    }
-    .h__line {
-        position: relative;
-        left: -.2rem;
-        width: 1.75rem;
-        font-size: 1.75rem;
-    }
-    .up {
-        width: 0;
-    }
-    .full__product {
-        top: -20.5rem;
-    }
-}
-.product__title h3 {
-    font-size: 21px;
-    padding: .5rem;
+    background-color: var(--black);
 }
 .product__title p {
-    font-size: 18px;
-    font-weight: 500;
-    padding: .5rem;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--white);
 }
 .product__title {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid grey;
 }
 .product__title span {
-    font-family: "Libre Bodoni", serif;
+    color: var(--white);
+}
+.product__size {
+    padding-top: .75rem;
+    color: rgb(228, 228, 228);
+}
+.product__size div {
+    padding-top: .75rem;
 }
 .product__img {
     position: relative;
@@ -81,13 +68,13 @@
     transition: .3s all;
 }
 .full__product {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: var(--secondary);
     position: relative;
-    top: -5rem;
+    top: -55rem;
     z-index: 8;
     padding: 1rem;
     transition: .3s ease;
+    width: 90%;
+    right: -5%;
 }
 .product__card div h3, p {
     margin: 0;
@@ -95,13 +82,14 @@
 .product__button {
     width: 100%;
     margin-bottom: 1rem;
-    color: var(--secondary);
+    color: rgb(228, 228, 228);
     background-color: transparent;
-    border: 1px solid var(--secondary);
+    border: 2px solid rgb(228, 228, 228);
     padding: .5rem 0;
     font-size: 18px;
+    font-weight: 500;
 }
 .product__button:hover {
-    background-color: var(--secondary);
+    background-color: rgb(228, 228, 228);
     color: var(--black);
 }

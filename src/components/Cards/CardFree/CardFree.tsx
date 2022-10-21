@@ -1,4 +1,5 @@
 import { AiFillStar } from 'react-icons/ai';
+const Fade: any = require("react-reveal/Fade")
 
 type Props = {
     img: string,
@@ -9,6 +10,7 @@ type Props = {
 
 const CardFree: React.FC<Props> = (props) => {
   return (
+    <Fade>
     <div className='free__card'>
       <div className='free__text__holder'>
         <p className='free__text'>{props.text}</p>
@@ -29,6 +31,7 @@ const CardFree: React.FC<Props> = (props) => {
         </div>
       </div>
     </div>
+    </Fade>
   )
 }
 

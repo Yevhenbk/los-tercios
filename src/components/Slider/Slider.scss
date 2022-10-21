@@ -22,9 +22,11 @@
   .slider__paragraph {
     padding-bottom: 1rem;
     margin: 0;
+    text-transform: uppercase;
   }
   .slider__paragraph {
     color: var(--secondary);
+    font-weight: 500;
   }
   .slider__button {
     font-size: 21px;

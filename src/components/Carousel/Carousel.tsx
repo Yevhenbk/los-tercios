@@ -10,7 +10,7 @@ type Props = {
 
 const Tcarousel: React.FC<Props> = (props) => {
   return (
-    <Fade big cascade>
+    <Fade big duration={1000} cascade>
     <Carousel fade>
       <Carousel.Item interval={5000}>
         <img className="carouselImage" style={{height: '100vh', width: 'auto'}} src={props.slider_1} alt="First slide" />

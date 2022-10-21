@@ -1,5 +1,6 @@
 import Iframe from 'react-iframe'
 import './Installs.scss'
+const Fade: any = require("react-reveal/Fade")
 
 const Installs: React.FC = () => {
   return (
@@ -7,6 +8,7 @@ const Installs: React.FC = () => {
       <div className='hor__br' />
       <div className='installs-holder'>
         <div className='installs '>
+          <Fade left duration={500} cascade>
           <div className='installs-section-one '>
             <h1 className='installs-title'>Instalaciones</h1>
             <p className='installs-text'>
@@ -18,6 +20,7 @@ const Installs: React.FC = () => {
               instalaciones sin límite cuando clase no está en sesión.{' '}
             </p>
           </div>
+          </Fade>
           <Iframe
             url='https://maps.google.com/maps?q=Calle%20de%20Miguel%20Yuste,%2043&t=&z=13&ie=UTF8&iwloc=&output=embed'
             frameBorder={0}
