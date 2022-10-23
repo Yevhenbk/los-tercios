@@ -59,9 +59,6 @@ a {
 ::-webkit-scrollbar-thumb {
   background: var(--secondary);
 }
-// ul {
-//   list-style-type: none;
-// }
 h4 {
   font-size: 21px;
 }
@@ -101,10 +98,5 @@ p {
   justify-content: center;
   align-items: center;
   transition: 1s ease;
-}
-.logo__loader {
-  width: 3rem;
-  height: auto;
-  margin-bottom: 1.5rem;
 }
 

@@ -41,6 +41,16 @@
     .display__header {
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
+        align-items: center;
+        gap: 2rem;
+    }
+    .header__title {
+        align-items: center;
+    }
+    .header__title h1 {
+        text-align: center;
+    }
+    .header__title p {
+        text-align: center;
     }
 }

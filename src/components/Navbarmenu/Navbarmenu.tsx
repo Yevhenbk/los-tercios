@@ -34,7 +34,7 @@ const Navbarmenu: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="menu__href" target='_top'>
+            <Link to="/calculator" className="menu__href" target='_top'>
               Calculadora
             </Link>
           </li>

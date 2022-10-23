@@ -8,9 +8,9 @@ import Classes from './pages/Classes'
 import About from './pages/About'
 import injectContext from './store/appContext'
 import ContactButton from './components/ContactButton/ContactButton'
+import Calculator from './pages/Calculator'
 import './static/globals.scss'
 import { RaceBy } from '@uiball/loaders'
-import logo from './static/img/logo__loader.png'
 
 const App: React.FC = () => {
   const [loading, setLoading] = React.useState<boolean>(true)
@@ -18,14 +18,13 @@ const App: React.FC = () => {
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 800);
+    }, 900);
   }, [])
 
   return (
     <div className='app__container'>
       {loading ?
       <div className="loader-wrapper">
-        {/* <img src={logo} className='logo__loader' /> */}
         <RaceBy size={100} color='#efa50e'/>
       </div> :
       <BrowserRouter>
@@ -36,6 +35,7 @@ const App: React.FC = () => {
           <Route path='/about' element={<About/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/classes' element={<Classes/>} />
+          <Route path='/calculator' element={<Calculator/>} />
         </Routes>
         <ContactButton/>
       </BrowserRouter>}

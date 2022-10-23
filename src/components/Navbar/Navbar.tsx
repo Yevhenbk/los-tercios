@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../static/img/rsz_logo__yellow.png'
+import logo from '../../static/img/logo__yellow.png'
 import { AiFillInstagram } from 'react-icons/ai'
 import Navbarmenu from '../Navbarmenu/Navbarmenu'
 import './Navbar.scss'

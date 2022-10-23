@@ -1,0 +1,81 @@
+.sinclair {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sinclair__check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 300;
+    gap: .75rem;
+    color: var(--secondary);
+    margin-top: .5rem;
+}
+.sinclair__check:hover {
+    cursor: pointer;
+}
+.sinclair__check .dot_tar {
+    color: var(--white);
+}
+.sinclair__active {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    align-items: center;
+    gap: .75rem;
+    color: var(--secondary);
+}
+.sinclair__active:hover {
+    cursor: pointer;
+}
+.sinclair__active .dot_tar {
+    color: var(--disabled-white);
+}
+.sinclair__input {
+    font-size: 24px;
+    background: var(--input);
+    padding: .35rem .75rem;
+    margin-top: 1.5rem;
+    border: none;
+    color: var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+    outline: none;
+}
+.sinclair__input:focus {
+    border-bottom: 2px solid var(--teritary);
+}
+.sinclair__input::placeholder {
+    color: var(--border);
+    font-style: italic;
+}
+.sinclair__button {
+    margin-top: 1.5rem;
+    border: none;
+    font-size: 18px;
+    color: var(--teritary);
+    background-color: var(--secondary);
+    text-transform: uppercase;
+    padding: .5rem 1.75rem;
+    font-weight: 500;
+}
+.sinclair__button:hover {
+    background-color: var(--teritary);
+    color: var(--secondary);
+    cursor: pointer;
+}
+.sinclair__button:disabled {
+    background-color: #efa40e84;
+    cursor: auto;
+    &:hover {
+        color: #861533b2;
+    }
+}
+.sinclair__total {
+    color: var(--disabled-white);
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 300;
+    margin-top: 1.5rem;
+}

@@ -28,6 +28,9 @@
     text-align: center;
     text-transform: uppercase;
 }
+.product__size p {
+    font-size: 18px;
+}
 .product__size div p {
     font-size: 16px;
     padding-top: .4rem;
@@ -36,7 +39,7 @@
     height: 2.25rem;
     border: 2px solid rgb(228, 228, 228);
     border-radius: 50%;
-    background-color: var(--black);
+    background-color:transparent;
 }
 .product__title p {
     font-size: 28px;
@@ -49,7 +52,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1rem;
-    border-bottom: 3px solid grey;
+    border-bottom: 2px solid grey;
 }
 .product__title span {
     color: var(--white);
@@ -88,6 +91,7 @@
     padding: .5rem 0;
     font-size: 18px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .product__button:hover {
     background-color: rgb(228, 228, 228);

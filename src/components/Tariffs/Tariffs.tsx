@@ -5,7 +5,6 @@ import { MdDone } from 'react-icons/md'
 import { GrClose } from 'react-icons/gr'
 import { FaRegDotCircle } from 'react-icons/fa'
 import { AiOutlineForm } from 'react-icons/ai'
-const Fade: any = require("react-reveal/Fade")
 
 const Tariffs: React.FC = () => {
 
@@ -13,15 +12,12 @@ const Tariffs: React.FC = () => {
 
   return (
     <div className='tariffs'>
-      <Fade cascade>
       <div>
         <h2>Let's get started!</h2>
         <p className='tariffs__par'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis iure veritatis ver.</p>
       </div>
-      </Fade>
     <div className='tarrifs__holder'>
       <section className='tariffs__section-one'>
-      <Fade cascade>
         <div className="tariffs__wrapper">
           <div className={tariff ? 'tariff__active' : 'tariffs__card'} onClick={() => setTariff(true)}>
             <div><FaRegDotCircle className='dot_tar'/><p>Beyound the limits</p></div>
@@ -32,11 +28,9 @@ const Tariffs: React.FC = () => {
             <h5>€39.99</h5>  
           </div>
         </div>
-      </Fade>  
       </section>
       <div className='vertical__br'/>
       <section className="tariffs__section-two">
-        <Fade cascade>
         <ul className='tariffs__list'>
           <li><MdDone className='done__icon'/>{tariff ? <span>7 days per week</span> : <span>2 days per week</span>}</li>
           <li><MdDone className='done__icon'/><span>Unlimited machine usage</span></li>
@@ -46,7 +40,6 @@ const Tariffs: React.FC = () => {
           <li><MdDone className='done__icon'/><span>Whatever</span></li>
           <li>{tariff ? <><MdDone className='done__icon'/> <span>Whatever</span></> : <><GrClose className='close__icon'/><span className='line__through'>Whatever</span></>}</li>
         </ul>
-        </Fade>
       </section>
     </div>
     <section className='contact__tariffs'>

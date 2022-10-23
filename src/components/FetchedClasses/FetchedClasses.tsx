@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Context } from '../../store/appContext'
 import './FetchedClasses.scss'
-const Fade: any = require("react-reveal/Fade")
 
 const FetchedClasses: React.FC = () => {
 
@@ -9,13 +8,10 @@ const FetchedClasses: React.FC = () => {
 
   return (
     <div className='class__table-holder' id='tariffs'>
-      <Fade cascade>
         <div>
         <h4>Horarios & Tarifas</h4>
         <p className='headers__par'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores laborum rem aliquid. Accusamus eius nam nihil cumque.</p>
         </div>
-      </Fade>
-      <Fade cascade>
       <section className='class__table'>
         <div className='class__day'>
           <h5>Lunes</h5>
@@ -78,7 +74,6 @@ const FetchedClasses: React.FC = () => {
               ))}  
         </div>
       </section> 
-      </Fade>
     </div>
   )
 }
