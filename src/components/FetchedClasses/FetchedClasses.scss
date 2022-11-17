@@ -1,20 +1,38 @@
 .class__day p, span, h5 {
     color: var(--secondary);
 }
+.time__icon {
+    font-size: 18px;
+    position: relative;
+    top: -.1rem;
+}
+.time__class {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
 .class__holder {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: .5rem;
-    padding: .5rem .75rem;
-    border: 2px solid var(--border);
+    // padding: .5rem .75rem;
+    // border: 2px solid var(--border);
     margin-bottom: .75rem;
+}
+.section__class {
+    display: flex;
+    flex-direction: row;
 }
 .class__table {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
 }
 @media screen and (max-width: 975px) {
     .class__table {
@@ -22,8 +40,8 @@
     }
 }
 .class__day h5 {
-    font-size: 21px;
-    margin-bottom: 1rem;
+    font-size: 16px;
+    margin: 0;
 }
 .class__day p {
     font-size: 21px;
@@ -35,16 +53,24 @@
     background-color: var(--primary);
     padding-bottom: 4rem;
 }
-.class__table-holder h4 {
-    font-size: 32px;
+.class__table-holder h2 {
     color: var(--secondary);
     padding: 1rem 0;
-    margin: 4rem 0 0;
-    // border-top: 2px solid var(--border);
-    // border-bottom: 2px solid var(--border);  
+    margin: 4rem 0 0; 
     width: 95vw;
     text-align: right;
     max-width: 50rem;
+}
+@media (max-width: 1000px) {
+    .class__table-holder div {
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+        p {
+            text-align: center;
+        }
+    }
 }
 .headers__par {
     color: var(--white);
@@ -54,4 +80,7 @@
 }
 .class__table-holder p {
     text-transform: uppercase;
+}
+.class__holder p {
+    text-transform: lowercase;
 }

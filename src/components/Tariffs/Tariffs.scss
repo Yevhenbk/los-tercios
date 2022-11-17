@@ -1,104 +1,31 @@
-.tariffs__section-one {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20rem;
-}
-.tariffs__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.tariffs__wrapper div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .5rem;
-}
-.tariffs__button {
-    font-size: 21px;
-    color: var(--secondary);
-    padding: .5rem .75rem;
-    border: 1px solid var(--secondary);
-    background-color: transparent;
-}
-.tariffs__button:hover {
-    background-color: var(--secondary);
-    color: var(--black);
-}
+
 .tarrifs__holder {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center; 
+    justify-content: space-evenly; 
+    width: 80vw;
     gap: 3rem;
     padding: 4rem 0;
 }
-.tariffs__card {
-    padding: .5rem .75rem;
-    width: 24rem;
-    display: flex;
-    border: 2px solid var(--secondary);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.tariffs__card .dot_tar {
-    color: var(--border);
-}
-.tariffs__card h5 {
-    margin: 0;
-    font-size: 24px;
-}
-.tariffs__card h5 {
-    color: var(--secondary);
-}
-.tariffs__card p {
-    font-weight: 500;
-    color: var(--secondary);
-    font-size: 21px;
-}
-.tariffs__card:hover {
-    cursor: pointer;
-}
-.tariffs__section-two ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.tariffs__section-two ul li {
-    font-size: 21px;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
-}
-.tariffs__section-two ul li span {
-    padding-left: .5rem;
-    font-style: italic;
-    color: var(--white);
-}
-.done__icon {
-    color: green;
-    margin-right: .5rem;
-    padding: .25rem;
-    font-size: 24px;
-    border-radius: 50%;
-    background-color: rgb(114, 189, 114);
-}
-.close__icon {
-    color: red;
-    margin-right: .5rem;
-    padding: .25rem;
-    font-size: 24px;
-    border-radius: 50%;
-    background-color: rgb(189, 114, 114);
-}
-.tariffs__section-two {
-    width: 24rem;
-}
-.vertical__br {
-    background-color: var(--border);
-    height: 20rem;
-    width: 2px;
+@media (max-width: 1000px) {
+    .tarrifs__holder {
+        flex-direction: column;
+    }
+    .tariffs {
+        padding: 0;
+    }
+    .tariffs__par {
+        max-width: 100vw;
+        padding: 0 1rem;
+        text-align: center !important;
+    }
+    .tariffs__one {
+        width: 20rem !important;
+    }
+    .feo_p {
+        text-align: center;
+    }
 }
 .tariffs {
     background-color: var(--primary);
@@ -107,142 +34,60 @@
     align-items: center;
     flex-direction: column;
 }
-.tariffs h2 {
-    color: var(--secondary);
-    text-align: left;
-    width: 50rem;
-}
 .tariffs__par {
     color: var(--white);
     width: 50rem;
     text-align: left
 }
-.tariff__active {
-    padding: .5rem .75rem;
-    width: 24rem;
+.tariffs div h2 {
+    color: var(--secondary);
+}
+.t-one__header {
+    color: var(--secondary);
     display: flex;
-    border: 2px solid var(--secondary);
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    background-color: var(--secondary);
 }
-.tariff__active .dot_tar {
-    color: var(--white);
+.tariffs__one {
+    width: 25rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
 }
-.tariff__active h5 {
-    color: var(--black);
-    margin: 0;
-}
-.tariff__active p {
-    font-weight: 500;
+.tariffs__one p {
+    border-top: 1px solid var(--border);
     font-size: 21px;
+    font-weight: 300;
+    color: var(--secondary);
+    padding-top: 1rem;
+    font-style: italic;
 }
-.tariff__active h5 {
+.tariffs__one ul {
+    padding-top: 1rem;
+    list-style: none;
+    padding-left: 1rem;
     margin: 0;
-    font-size: 24px;
 }
-.tariff__active:hover {
-    cursor: default;
-}
-.line__through {
-    text-decoration: line-through;
-    color: var(--disabled-white) !important;
-}
-.tariffs__section-one a.thar-three {
-    max-width: 20rem;
-    text-align: center;
-}
-.arrow__icon {
-    transform: rotate(-45deg);
-    margin-left: 1rem;
-    transition: ease .2s;
-    font-size: 26px;
-}
-.tariffs__section-one a.thar-three:hover {
-    .arrow__icon {
-        transition: ease .2s;
-        margin-left: 2rem;
-        transform: rotate(-90deg);
-    }
-}
-@media screen and (max-width: 840px) {
-    .tarrifs__holder {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .vertical__br {
-        display: none;
-    }
-    .tariffs__section-one {
-        height: auto;
-        gap: 1rem;
-    }
-}
-.contact__tariffs {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-}
-.tariffs__button-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--teritary);
-    background-color: var(--secondary);
-    padding: 0 0 2rem;
-}
-.outline__form {
-    font-size: 32px;
-}
-.button-tar__holder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.button-tar__holder p {
-    font-weight: 600;
-    padding-top: .5rem;
-    font-size: 18px;
-}
-.tariffs__button-contact:hover {
-    background-color: var(--teritary);
+.tariffs__one ul li {
+    font-size: 21px;
     color: var(--secondary);
-    cursor: pointer;
+    font-weight: 300;
+    margin-bottom: .5rem;
 }
-.button-tar__holder::before {
-    content: '';
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--secondary);
-    position: relative;
-    top: -1rem;
-    transform: rotate(45deg);
+.md__done {
+    color: var(--white);
+    border-radius: 50%;
+    background-color: green;
+    padding: .15rem;
+    margin-right: .5rem;
 }
-.tariffs__button-contact:hover > .button-tar__holder::before {
-    background-color: var(--teritary) !important;
-}
-.data__tariffs-holder {
-    display: flex;
-    flex-direction: column;
-    padding: 6rem;
-    gap: .5rem;
-    align-items: flex-start;
-    color: var(--secondary);
+.tariffs .class__table-p {
+    color: var(--white);
     text-transform: uppercase;
+    width: 80vw;
+    text-align: center;
+    padding: 4rem 0 8rem;
 }
-.data__tariffs-holder p {
-    font-size: 16px;
-}
-@media screen and (max-width: 1000px) {
-    .data__tariffs-holder {
-        padding: 4rem 2rem;
-    }
-}
-.tariffs {
-    h2, h5, p {
-        text-transform: uppercase;
-    }
-
+.tariffs__par {
+    text-transform: uppercase;
 }

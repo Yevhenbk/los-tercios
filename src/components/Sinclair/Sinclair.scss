@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 25rem;
 }
 .sinclair__check {
     display: flex;
@@ -11,6 +12,12 @@
     gap: .75rem;
     color: var(--secondary);
     margin-top: .5rem;
+}
+.sinclair__check {
+    p {
+    font-size: 28px;
+    font-style: italic; 
+    }
 }
 .sinclair__check:hover {
     cursor: pointer;
@@ -27,6 +34,12 @@
     gap: .75rem;
     color: var(--secondary);
 }
+.sinclair__active {
+    p {
+    font-size: 28px;
+    font-style: italic; 
+    }
+}
 .sinclair__active:hover {
     cursor: pointer;
 }
@@ -34,7 +47,8 @@
     color: var(--disabled-white);
 }
 .sinclair__input {
-    font-size: 24px;
+    width: 100%;
+    font-size: 28px;
     background: var(--input);
     padding: .35rem .75rem;
     margin-top: 1.5rem;
@@ -51,13 +65,14 @@
     font-style: italic;
 }
 .sinclair__button {
+    width: 100%;
     margin-top: 1.5rem;
     border: none;
-    font-size: 18px;
+    font-size: 24px;
     color: var(--teritary);
     background-color: var(--secondary);
     text-transform: uppercase;
-    padding: .5rem 1.75rem;
+    padding: .75rem 1.75rem;
     font-weight: 500;
 }
 .sinclair__button:hover {
@@ -78,4 +93,12 @@
     font-size: 21px;
     font-weight: 300;
     margin-top: 1.5rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }

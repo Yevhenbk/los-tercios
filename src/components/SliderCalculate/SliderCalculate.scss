@@ -13,6 +13,7 @@
     .slider__calculate {
         height: 80vh;
     }
+    
 }
 @media (max-width: 1400px) {
     .calculate__text div {
@@ -24,6 +25,13 @@
         flex-direction: column;
         gap: 5rem;
         height: fit-content;
+    }
+    .calculate__text div p span {
+        padding: 0 !important;
+        background-color: transparent !important;
+    }
+    .calculate__text div p div {
+        width: 100%;
     }
 }
 .calculate__text {
@@ -44,4 +52,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.calculate__text div p {
+    color: var(--white);
+}
+.calculate__text div p span {
+    font-size: 21px;
+    margin: .5rem 0;
+    padding: .5rem .75rem;
+    background-color: var(--input);
+}
+.calculate__text div p div {
+    margin-top: 1.5rem;
+    padding: 0;
 }
